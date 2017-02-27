@@ -5,8 +5,7 @@ A cross platform app created for individuals to take and create polls. Created f
 ## App Layout as Follows:##
 
 __Shared Files:__
-
-> _These will be a shared effort between Kristin and Tarah_
+_These will be a shared effort between Kristin and Tarah_
 * __PollData.cs__ - This dictates the structure of each poll question. Contains the question, the answer structure (free response, radio              buttons, ect.) 
 * __PollFormat.cs__ - This will contain The structure for a full poll. It can contain a List(this is a built in C# struct. Really nifty) of questions. It will inherit multiple instances of PollData.cs. We might need to research class inheritance for this. This will also contain a list of the answers to each of the questions. This will connect to the cloud.
 * __Cloud.cs__ - This will contain a general class to upload a blob to a container in the cloud.
