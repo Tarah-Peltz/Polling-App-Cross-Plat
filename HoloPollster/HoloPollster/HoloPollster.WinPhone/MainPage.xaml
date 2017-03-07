@@ -20,7 +20,7 @@
             <TextBlock x:Name="Logo" Grid.Row="0" Text="HoloPollster" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48"/>
         <TextBlock Text="Username:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="1" />
         <TextBlock Text="Password:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="3" />
-        <Button Content="Hello World, Click Me!" x:Name="Button" Grid.Row="5" HorizontalAlignment="Center"/>
+        <Button Content="Welcome!" x:Name="Button" Grid.Row="5" HorizontalAlignment="Center"/>
         <TextBox x:Name="username" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
         <PasswordBox x:Name="password" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center"/>
     </Grid>
