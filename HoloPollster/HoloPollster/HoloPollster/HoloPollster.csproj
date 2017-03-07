@@ -33,6 +33,7 @@
   <ItemGroup>
     <Compile Include="MyClass.cs" />
     <Compile Include="PollData.cs" />
+    <Compile Include="PollFormat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

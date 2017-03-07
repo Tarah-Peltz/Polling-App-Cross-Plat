@@ -3,11 +3,6 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-    <Button
-        android:id="@+id/myButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="submit" />
     <TextView
         android:text="Is this a poll?"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -58,4 +53,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/autoCompleteTextView1" />
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit" />
 </LinearLayout>
