@@ -9,10 +9,30 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock FontSize="48" x:Name="Hi" HorizontalAlignment="Left" Margin="71,217,0,0" TextWrapping="Wrap" Text="Hi" VerticalAlignment="Top" Height="116" Width="301"/>
-        <TextBlock x:Name="block" Text="{Binding ViewModel.Login.username}" FontSize="48"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"/>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="1.5*"/>
+        
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock x:Name="block" Text="{Binding ViewModel.Login.username}" FontSize="36"
+            HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWholeWords"/>
+        <Button x:Name="MyStats" Grid.Column="1" HorizontalAlignment="Center"
+            VerticalAlignment="Center" Content="My Statistics"/>
+        <TextBlock Text="Welcome! What would you like to do?" Grid.ColumnSpan="2" 
+                   Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontSize="30" TextWrapping="WrapWholeWords"/>
+        <Button x:Name="MakeAPoll" Content="Make A Poll" Grid.Row="2" VerticalAlignment="Center"
+                HorizontalAlignment="Center"/>
+        <Button x:Name="TakeAPoll" Content="Take A Poll" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"
+                HorizontalAlignment="Center"/>
     </Grid>
 </Page>
