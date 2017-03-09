@@ -23,7 +23,7 @@ namespace HoloPollster.WinPhone
     public sealed partial class MainPage : Page
     {
         int count = 1;
-
+        static public LoginData userdata;
         public MainPage()
         {
             this.InitializeComponent();
@@ -47,6 +47,9 @@ namespace HoloPollster.WinPhone
             // this event is handled for you.
             Button.Click += delegate
             {
+                userdata = new LoginData();
+                userdata.password = password.Password.ToString();
+                userdata.username = username.Text.ToString();
                 this.Frame.Navigate(typeof(HomeScreen));
             };
         }

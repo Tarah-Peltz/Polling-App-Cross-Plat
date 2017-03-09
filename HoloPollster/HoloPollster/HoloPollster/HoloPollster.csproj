@@ -31,6 +31,7 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="LoginData.cs" />
     <Compile Include="MyClass.cs" />
     <Compile Include="PollData.cs" />
     <Compile Include="PollFormat.cs" />
