@@ -28,7 +28,7 @@ namespace HoloPollster.WinPhone
             this.ViewModel = new LoginData();
             ViewModel.username = MainPage.userdata.username;
             ViewModel.password = MainPage.userdata.password;
-            block.Text = "Welcome, " + ViewModel.username;
+            //block.Text = "Welcome, " + ViewModel.username;
         }
 
             public LoginData ViewModel { get; set; }

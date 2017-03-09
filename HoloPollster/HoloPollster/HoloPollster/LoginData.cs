@@ -15,6 +15,13 @@ namespace HoloPollster
             this.username = "default";
             this.password = "default";
         }
+        public string welcomeMessage
+        {
+            get
+            {
+                return $"Welcome { this.username}";
+            }
+        }
     }
 
     public class LoginDataViewModel

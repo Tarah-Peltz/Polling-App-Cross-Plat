@@ -23,7 +23,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         
-        <TextBlock x:Name="block" Text="{Binding ViewModel.Login.username}" FontSize="36"
+        <TextBlock x:Name="block" Text="{Binding Source=ViewModel.Login.username}" FontSize="36"
             HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWholeWords"/>
         <Button x:Name="MyStats" Grid.Column="1" HorizontalAlignment="Center"
             VerticalAlignment="Center" Content="My Statistics"/>
