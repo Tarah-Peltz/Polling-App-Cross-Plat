@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="HoloPollster.WinPhone.MakeAPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HoloPollster.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Rectangle Height="300" Grid.Row="0" Fill="AliceBlue"/>
+            <Rectangle Height="300" Grid.Row="1" Fill="SaddleBrown"/>
+            <Rectangle Height="300" Grid.Row="2" Fill="Violet"/>
+            <Rectangle Height="300" Grid.Row="3" Fill="CadetBlue"/>
+            <Rectangle Height="300" Grid.Row="4" Fill="Wheat"/>
+            <Rectangle Height="300" Grid.Row="5" Fill="Magenta"/>
+        </Grid>
+        
+    </ScrollViewer>
+</Page>

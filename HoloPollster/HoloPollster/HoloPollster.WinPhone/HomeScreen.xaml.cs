@@ -43,5 +43,13 @@ namespace HoloPollster.WinPhone
         {
             
         }
+
+
+                
+    private void MakeAPoll_Click(object sender, RoutedEventArgs e)
+            {
+                this.Frame.Navigate(typeof(MakeAPage));
+                //Oops. Accidentally named MakeAPage at first. This calls MakeAPoll, which is MakeAPage
+            }
     }
 }
