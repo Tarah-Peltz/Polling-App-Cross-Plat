@@ -8,21 +8,15 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <ScrollViewer>
-        <Grid>
+        <Grid Name="grid">
             <Grid.RowDefinitions>
                 <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+
             </Grid.RowDefinitions>
-            <Rectangle Height="300" Grid.Row="0" Fill="AliceBlue"/>
-            <Rectangle Height="300" Grid.Row="1" Fill="SaddleBrown"/>
-            <Rectangle Height="300" Grid.Row="2" Fill="Violet"/>
-            <Rectangle Height="300" Grid.Row="3" Fill="CadetBlue"/>
-            <Rectangle Height="300" Grid.Row="4" Fill="Wheat"/>
-            <Rectangle Height="300" Grid.Row="5" Fill="Magenta"/>
+            <Button Height="100" HorizontalAlignment="Stretch" Name="Adder"
+                    Grid.Row="0" Background="PowderBlue" Content="Add a question"
+                    Foreground="Black" Click="AddQuestion"/>
+
         </Grid>
         
     </ScrollViewer>

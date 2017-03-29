@@ -22,9 +22,11 @@ namespace HoloPollster.WinPhone
     /// </summary>
     public sealed partial class MakeAPage : Page
     {
+        int rowIndex;
         public MakeAPage()
         {
             this.InitializeComponent();
+            rowIndex = 0;
         }
 
         /// <summary>
@@ -34,6 +36,24 @@ namespace HoloPollster.WinPhone
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private void AddQuestion(object sender, RoutedEventArgs e)
+        {
+            RowDefinition newRow = new RowDefinition();
+            rowIndex += 1;
+            newRow.Height = GridLength.Auto;
+            newRow.MinHeight = 30;
+ 
+            grid.RowDefinitions.Add(newRow);
+            Adder.SetValue(Grid.RowProperty, rowIndex);
+            
+            Button newBut = new Button();
+            newBut.Height = 100;
+            newBut.Content = "Hi!";
+            Grid.SetRow(newBut,rowIndex-1);
+            grid.Children.Add(newBut);
+
         }
     }
 }
