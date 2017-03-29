@@ -47,12 +47,15 @@ namespace HoloPollster.WinPhone
  
             grid.RowDefinitions.Add(newRow);
             Adder.SetValue(Grid.RowProperty, rowIndex);
-            
+            StackPanel stack = new StackPanel();
             Button newBut = new Button();
+            TextBox text = new TextBox();
             newBut.Height = 100;
             newBut.Content = "Hi!";
-            Grid.SetRow(newBut,rowIndex-1);
-            grid.Children.Add(newBut);
+            Grid.SetRow(stack,rowIndex-1);
+            grid.Children.Add(stack);
+            stack.Children.Add(text);
+            stack.Children.Add(newBut);
 
         }
     }
