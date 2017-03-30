@@ -42,12 +42,15 @@ namespace HoloPollster.WinPhone
         private void AddQuestion(object sender, RoutedEventArgs e)
         {
             RowDefinition newRow = new RowDefinition();
-            rowIndex += 1;
+            RowDefinition newRow2 = new RowDefinition();
+            RowDefinition newRow3 = new RowDefinition();
+            rowIndex += 3;
             newRow.Height = GridLength.Auto;
             newRow.MinHeight = 30;
             grid.RowDefinitions.Add(newRow);
+            grid.RowDefinitions.Add(newRow2);
+            grid.RowDefinitions.Add(newRow3);
             AdderSet.SetValue(Grid.RowProperty, rowIndex);
-            StackPanel stack = new StackPanel();
             Button newBut = new Button();
             TextBox text = new TextBox();
             Button close = new Button();
@@ -61,36 +64,56 @@ namespace HoloPollster.WinPhone
             close.VerticalAlignment = VerticalAlignment.Top;
             newBut.Height = 100;
             newBut.Content = "Hi!";
-            Grid.SetRow(stack,rowIndex-1);
-            grid.Children.Add(stack);
-            stack.Children.Add(close);
-            stack.Children.Add(text);
-            stack.Children.Add(newBut);
-            
+            Grid.SetRow(close, rowIndex - 3);
+            Grid.SetRow(text, rowIndex - 2);
+            Grid.SetRow(newBut,rowIndex-1);
+            grid.Children.Add(close);
+            grid.Children.Add(text);
+            grid.Children.Add(newBut);
+
+
             //Name each of these programmatically and add to a list of structs
         }
         void RemoveQuestion(object sender, RoutedEventArgs e) {
-            rowIndex -= 1;
+            rowIndex -= 3;
             var rm = sender as Button;
+            
             int rmindex = (int)rm.GetValue(Grid.RowProperty);
-            foreach (UIElement control in grid.Children)
+            for (int i = 0; i < 3; i++)
             {
-                var usercontrol = control as StackPanel;
-                if (usercontrol != null)
+                foreach (UIElement control in grid.Children)
                 {
-                    int childrowindex = (int)usercontrol.GetValue(Grid.RowProperty);
+                    // var usercontrol = control as StackPanel;
+                    //if (usercontrol != null)
+                    //{
+                    //  int childrowindex = (int)usercontrol.GetValue(Grid.RowProperty);
+                    int childrowindex = (int)control.GetValue(Grid.RowProperty);
                     if (childrowindex == rmindex)
                     {
                         grid.Children.Remove(control);
                         grid.RowDefinitions.RemoveAt(childrowindex);
                         break;
                     }
-                }
 
+                    /*  */
+                    // }
+
+                }
+                foreach (FrameworkElement control in grid.Children)
+                {
+                    // var usercontrol = control as StackPanel;
+                    //if (usercontrol != null)
+                    //{
+                    //  int childrowindex = (int)usercontrol.GetValue(Grid.RowProperty);
+                    int childrowindex = (int)control.GetValue(Grid.RowProperty);
+                    if (childrowindex > rmindex)
+                    {
+                        Grid.SetRow(control, childrowindex - 1);
+                    }
+                }
             }
 
 
-
-        }
+            }
     }
 }
