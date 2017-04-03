@@ -17,22 +17,40 @@ using Windows.UI.Xaml.Navigation;
 
 namespace HoloPollster.WinPhone
 {
+    
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class HomeScreen : Page
+    public sealed partial class TakeAPoll : Page
     {
-        public HomeScreen()
+
+        int rowIndex;
+        public TakeAPoll()
         {
             this.InitializeComponent();
-            this.ViewModel = new LoginData();
-            ViewModel.username = MainPage.userdata.username;
-            ViewModel.password = MainPage.userdata.password;
-            //block.Text = "Welcome, " + ViewModel.username;
+            rowIndex = 0;
+            foreach (PollData question in MakeAPoll.questions)
+            {
+                RowDefinition newRow = new RowDefinition();
+                RowDefinition newRow2 = new RowDefinition();
+                rowIndex += 2;
+                newRow.Height = GridLength.Auto;
+                newRow.MinHeight = 30;
+                newRow2.Height = GridLength.Auto;
+                newRow2.MinHeight = 30;
+                grid.RowDefinitions.Add(newRow);
+                grid.RowDefinitions.Add(newRow2);
+                TextBlock ques = new TextBlock();
+                TextBox ans = new TextBox();
+                ques.Text = question.QuestionText;
+                ans.Text = "Your answer here";
+                Grid.SetRow(ques, rowIndex - 2);
+                Grid.SetRow(ans, rowIndex - 1);
+                grid.Children.Add(ques);
+                grid.Children.Add(ans);
+            }
+            
         }
-
-        public LoginData ViewModel { get; set; }
-
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -42,18 +60,6 @@ namespace HoloPollster.WinPhone
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
 
-        }
-
-
-
-        private void MakeAPoll_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MakeAPoll));
-            //Oops. Accidentally named MakeAPage at first. This calls MakeAPoll, which is MakeAPage
-        }
-        private void TakeAPoll_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(TakeAPoll));
         }
     }
 }

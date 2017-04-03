@@ -33,6 +33,6 @@
         <Button x:Name="MakeAPoll" Content="Make A Poll" Grid.Row="2" VerticalAlignment="Center"
                 HorizontalAlignment="Center" Click="MakeAPoll_Click"/>
         <Button x:Name="TakeAPoll" Content="Take A Poll" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"
-                HorizontalAlignment="Center"/>
+                HorizontalAlignment="Center" Click="TakeAPoll_Click"/>
     </Grid>
 </Page>
