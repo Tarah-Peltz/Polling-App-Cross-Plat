@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace HoloPollster
 {
    
-    class PollFormat
+    class AllPollsCreated
     {
-        public List<PollData> question { get; set; }
+        public List<List<PollData>> CreatedPolls { get; set; }
     }
 }

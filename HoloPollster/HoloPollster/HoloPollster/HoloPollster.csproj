@@ -33,7 +33,7 @@
   <ItemGroup>
     <Compile Include="LoginData.cs" />
     <Compile Include="PollData.cs" />
-    <Compile Include="PollFormat.cs" />
+    <Compile Include="AllPollsCreated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
