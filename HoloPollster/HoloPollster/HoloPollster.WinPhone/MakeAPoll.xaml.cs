@@ -140,7 +140,8 @@ namespace HoloPollster.WinPhone
                 }
                 questions.Add(elem);
             }
-            this.Frame.Navigate(typeof(HomeScreen));
+
+            this.Frame.Navigate(typeof(NamePoll));
         }
 
         private static IEnumerable<T> FindVisualChildren<T>(DependencyObject depObj) where T : DependencyObject

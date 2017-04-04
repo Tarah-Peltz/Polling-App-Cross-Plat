@@ -25,11 +25,20 @@ namespace HoloPollster.WinPhone
     {
 
         int rowIndex;
+        PollsWithMetaData pickedPoll;
         public TakeAPoll()
         {
             this.InitializeComponent();
             rowIndex = 0;
-            foreach (PollData question in MakeAPoll.questions)
+            foreach (PollsWithMetaData selected in MainPage.polls.CreatedPolls)
+            {
+                if (selected.PollName == PickAPoll.picked)
+                {
+                    pickedPoll = selected;
+                }
+            }
+
+            foreach (PollData question in pickedPoll)
             {
                 RowDefinition newRow = new RowDefinition();
                 RowDefinition newRow2 = new RowDefinition();
@@ -49,7 +58,18 @@ namespace HoloPollster.WinPhone
                 grid.Children.Add(ques);
                 grid.Children.Add(ans);
             }
-            
+            Button submit = new Button();
+            submit.Content = "Submit Poll";
+            submit.Click += submitPoll;
+            RowDefinition newRow3 = new RowDefinition();
+            grid.RowDefinitions.Add(newRow3);
+            Grid.SetRow(submit, rowIndex);
+            grid.Children.Add(submit);
+        }
+
+        private void submitPoll(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HomeScreen));
         }
 
         /// <summary>
@@ -59,7 +79,7 @@ namespace HoloPollster.WinPhone
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
+            
         }
     }
 }

@@ -22,14 +22,16 @@ namespace HoloPollster.WinPhone
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        int count = 1;
+       
+        //int count = 1;
         static public LoginData userdata;
+        static public AllPollsCreated polls;
         static public string Username;
         static public string Password;
         public MainPage()
         {
             this.InitializeComponent();
-
+            
             this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
@@ -50,8 +52,19 @@ namespace HoloPollster.WinPhone
             Button.Click += delegate
             {
                 userdata = new LoginData();
+                polls = new AllPollsCreated();
+                PollData demoq = new PollData();
+                List<PollData> sampleList = new List<PollData>();
+                PollsWithMetaData sample = new PollsWithMetaData();
+                /*demoq.QuestionText = "This is a sample quiz";
+                demoq.type = PollData.AnswerType.TextBox;
+                sampleList.Add(demoq);
+                sample.questions = sampleList;
+                sample.CreationTime = DateTime.Now;
+                sample.PollCreator = "Tarah";
+                polls.CreatedPolls.Add(sample);
                 userdata.password = password.Password.ToString();
-                userdata.username = username.Text.ToString();
+                userdata.username = username.Text.ToString();*/
                 this.Frame.Navigate(typeof(HomeScreen));
             };
         }

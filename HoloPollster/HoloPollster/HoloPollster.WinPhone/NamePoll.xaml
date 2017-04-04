@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="HoloPollster.WinPhone.NamePoll"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HoloPollster.WinPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center"
+                   TextWrapping="Wrap" Text="Great! Almost Done! Now name your poll." VerticalAlignment="Top" FontSize="36"/>
+        <TextBox x:Name="textbox" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Your Name Here" VerticalAlignment="Center" FontSize="22"/>
+        <Button x:Name="button" Content="Submit" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Aquamarine" Foreground="Black" Click="button_Click"/>
+
+    </Grid>
+</Page>

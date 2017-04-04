@@ -1,14 +1,32 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HoloPollster
+namespace HoloPollster 
 {
-   
-    class AllPollsCreated
+    public class AllPollsCreated : IEnumerable<PollsWithMetaData>
     {
-        public List<List<PollData>> CreatedPolls { get; set; }
+        public List<PollsWithMetaData> CreatedPolls { get; set; }
+        public AllPollsCreated() {
+            CreatedPolls = new List<PollsWithMetaData>();
+        }
+        public IEnumerator<PollsWithMetaData> GetEnumerator()
+        {
+            return CreatedPolls.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return CreatedPolls.GetEnumerator();
+        }
+
     }
-}
+    }
+    
+        
+    
+
+

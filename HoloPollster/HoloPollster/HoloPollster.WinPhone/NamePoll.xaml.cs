@@ -20,19 +20,14 @@ namespace HoloPollster.WinPhone
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class HomeScreen : Page
+    public sealed partial class NamePoll : Page
     {
-        public HomeScreen()
+        public PollsWithMetaData newPoll;
+        public NamePoll()
         {
+            newPoll = new PollsWithMetaData();
             this.InitializeComponent();
-            this.ViewModel = new LoginData();
-            ViewModel.username = MainPage.userdata.username;
-            ViewModel.password = MainPage.userdata.password;
-            //block.Text = "Welcome, " + ViewModel.username;
         }
-
-        public LoginData ViewModel { get; set; }
-
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -41,19 +36,16 @@ namespace HoloPollster.WinPhone
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
         }
 
-
-
-        private void MakeAPoll_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MakeAPoll));
-            //Oops. Accidentally named MakeAPage at first. This calls MakeAPoll, which is MakeAPage
-        }
-        private void TakeAPoll_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(PickAPoll));
+            newPoll.questions = MakeAPoll.questions;
+            newPoll.PollCreator = MainPage.userdata.username;
+            newPoll.CreationTime = DateTime.Now;
+            newPoll.PollName = textbox.Text;
+            MainPage.polls.CreatedPolls.Add(newPoll);
+            this.Frame.Navigate(typeof(HomeScreen));
         }
     }
 }

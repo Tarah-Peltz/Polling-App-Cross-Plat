@@ -96,6 +96,12 @@
     <Compile Include="MakeAPoll.xaml.cs">
       <DependentUpon>MakeAPoll.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NamePoll.xaml.cs">
+      <DependentUpon>NamePoll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PickAPoll.xaml.cs">
+      <DependentUpon>PickAPoll.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TakeAPoll.xaml.cs">
       <DependentUpon>TakeAPoll.xaml</DependentUpon>
@@ -128,6 +134,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="MakeAPoll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NamePoll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PickAPoll.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

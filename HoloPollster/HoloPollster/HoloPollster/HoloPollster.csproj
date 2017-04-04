@@ -31,9 +31,10 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AllPollsCreated.cs" />
     <Compile Include="LoginData.cs" />
     <Compile Include="PollData.cs" />
-    <Compile Include="AllPollsCreated.cs" />
+    <Compile Include="PollsWithMetaData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
