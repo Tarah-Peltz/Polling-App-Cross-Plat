@@ -32,10 +32,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AllPollsCreated.cs" />
+    <Compile Include="Cloud.cs" />
     <Compile Include="LoginData.cs" />
     <Compile Include="PollData.cs" />
     <Compile Include="PollsWithMetaData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
