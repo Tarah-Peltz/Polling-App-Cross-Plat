@@ -12,7 +12,7 @@ namespace HoloPollster
     {
         public Cloud() { }
 
-        public static async Task performBlobOperation()
+        public static async Task performBlobOperation(String serialData)
         {
             //Get storage account
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=YOUR_ACCOUNT_NAME;AccountKey=YOUR_ACCOUNT_KEY");
@@ -23,10 +23,10 @@ namespace HoloPollster
 
             await container.CreateIfNotExistsAsync();
 
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference("placeholder");
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference("poll");
 
             //create new blob storing serialized data
-            await blockBlob.UploadTextAsync("Hello World");
+            await blockBlob.UploadTextAsync(serialData);
         }
     }
 }
