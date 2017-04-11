@@ -15,7 +15,7 @@ namespace HoloPollster
         public static async Task performBlobOperation()
         {
             //Get storage account
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=holopollster;AccountKey=WH1IXI99gGbxO/StyP8o/KknvLLPJqJfw3YK1PNplREb2C+NDeesnJFHfmKwCldK35BMNYOyfHaHtwiksY/LVg==");
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=YOUR_ACCOUNT_NAME;AccountKey=YOUR_ACCOUNT_KEY");
        
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 
