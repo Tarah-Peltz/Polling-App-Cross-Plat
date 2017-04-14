@@ -13,8 +13,6 @@ namespace HoloPollster
     class Serializer
     {
 
-        
-
-        
+       
     }
 }

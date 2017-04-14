@@ -31,8 +31,9 @@ namespace HoloPollster.WinPhone
         public MainPage()
         {
             this.InitializeComponent();
-            
             this.NavigationCacheMode = NavigationCacheMode.Required;
+            Cloud.performBlobOperation("polldata");
+
         }
 
         /// <summary>
@@ -40,7 +41,7 @@ namespace HoloPollster.WinPhone
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             // TODO: Prepare page for display here.
 
@@ -65,8 +66,10 @@ namespace HoloPollster.WinPhone
                 polls.CreatedPolls.Add(sample);
                 userdata.password = password.Password.ToString();
                 userdata.username = username.Text.ToString();*/
-                this.Frame.Navigate(typeof(HomeScreen));
+                Frame.Navigate(typeof(HomeScreen));
             };
+
+            
         }
     }
 }

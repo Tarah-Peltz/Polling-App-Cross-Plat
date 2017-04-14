@@ -16,14 +16,14 @@ namespace HoloPollster
         {
             //Get storage account
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=YOUR_ACCOUNT_NAME;AccountKey=YOUR_ACCOUNT_KEY");
-       
+
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 
-            CloudBlobContainer container = blobClient.GetContainerReference("polldata");
+            CloudBlobContainer container = blobClient.GetContainerReference("pollcontainer");
 
             await container.CreateIfNotExistsAsync();
 
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference("poll");
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference("pollblob");
 
             //create new blob storing serialized data
             await blockBlob.UploadTextAsync(serialData);
