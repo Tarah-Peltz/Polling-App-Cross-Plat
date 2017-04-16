@@ -19,7 +19,7 @@ namespace HoloPollster
             MemoryStream stream = objSerializer.StreamData(pollData);
             //Get storage account
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=YOUR_ACCOUNT_NAME;AccountKey=YOUR_ACCOUNT_KEY");
-       
+
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 
             CloudBlobContainer container = blobClient.GetContainerReference("pollswithmetadata");
@@ -27,6 +27,7 @@ namespace HoloPollster
             await container.CreateIfNotExistsAsync();
 
             CloudBlockBlob blockBlob = container.GetBlockBlobReference("poll/" + pollData.PollCreator + "," + pollData.PollName + "," + pollData.CreationTime);
+
 
 
             //create new blob storing serialized data
