@@ -30,7 +30,7 @@ namespace HoloPollster.Droid
 
 
 
-        protected override void OnCreate(Bundle bundle)
+        protected override async void OnCreate(Bundle bundle)
 
         {
 
@@ -52,11 +52,15 @@ namespace HoloPollster.Droid
 
 
 
-            button.Click += delegate {
+            button.Click += delegate
+            {
 
                 button.Text = string.Format("{0} clicks!", count++);
+                Cloud.performBlobOperation("ButtonClick");
 
             };
+            await Cloud.performBlobOperation("Hello world!");
+            //await Cloud.performBlobOperation();
 
         }
 

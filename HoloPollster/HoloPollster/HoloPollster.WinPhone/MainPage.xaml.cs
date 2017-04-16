@@ -33,6 +33,8 @@ namespace HoloPollster.WinPhone
             this.InitializeComponent();
             
             this.NavigationCacheMode = NavigationCacheMode.Required;
+
+            
         }
 
         /// <summary>
@@ -42,6 +44,7 @@ namespace HoloPollster.WinPhone
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+
             // TODO: Prepare page for display here.
 
             // TODO: If your application contains multiple pages, ensure that you are
@@ -52,11 +55,12 @@ namespace HoloPollster.WinPhone
             Button.Click += delegate
             {
                 userdata = new LoginData();
-                polls = new AllPollsCreated();
+                /*polls = new AllPollsCreated();
                 PollData demoq = new PollData();
                 List<PollData> sampleList = new List<PollData>();
                 PollsWithMetaData sample = new PollsWithMetaData();
-                /*demoq.QuestionText = "This is a sample quiz";
+
+                demoq.QuestionText = "This is a sample quiz";
                 demoq.type = PollData.AnswerType.TextBox;
                 sampleList.Add(demoq);
                 sample.questions = sampleList;
@@ -65,6 +69,8 @@ namespace HoloPollster.WinPhone
                 polls.CreatedPolls.Add(sample);
                 userdata.password = password.Password.ToString();
                 userdata.username = username.Text.ToString();*/
+
+
                 this.Frame.Navigate(typeof(HomeScreen));
             };
         }

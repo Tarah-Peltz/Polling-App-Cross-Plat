@@ -31,5 +31,10 @@ namespace HoloPollster
         {
             return questions.GetEnumerator();
         }
+
+        public void Add(PollData pollData)
+        {
+            questions.Add(pollData);
+        }
     }
 }

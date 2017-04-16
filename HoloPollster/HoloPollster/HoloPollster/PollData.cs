@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
+using System.IO;
+using System.Xml.Serialization;
+
 
 namespace HoloPollster
 {
-    public class PollData
+    
+    public class PollData 
     {
         public string QuestionText { get; set; }
         public enum AnswerType { Default = 0, TextBox = 0, RadioButton = 1 };
         public AnswerType type;
-
+       
 
         public PollData()
         {

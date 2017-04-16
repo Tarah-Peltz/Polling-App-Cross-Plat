@@ -38,13 +38,15 @@ namespace HoloPollster.WinPhone
         {
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private async void button_Click(object sender, RoutedEventArgs e)
         {
             newPoll.questions = MakeAPoll.questions;
             newPoll.PollCreator = MainPage.userdata.username;
             newPoll.CreationTime = DateTime.Now;
             newPoll.PollName = textbox.Text;
-            MainPage.polls.CreatedPolls.Add(newPoll);
+            //MainPage.polls.CreatedPolls.Add(newPoll);
+            Cloud cloud = new Cloud();
+            await Cloud.performBlobOperation(newPoll);
             this.Frame.Navigate(typeof(HomeScreen));
         }
     }
