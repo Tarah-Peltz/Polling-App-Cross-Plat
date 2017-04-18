@@ -17,7 +17,7 @@ namespace HoloPollster
         private static ObjectSerializer objSerializer;
         public Cloud() {
             accountName = "holopollster";
-            accountKey = "DefaultEndpointsProtocol=https;AccountName=holopollster;AccountKey=/t4mpCHimFTTrD54zwj98OwDDaEONEY4tPTF3J/UAdscROy7rbkX1Ut4+lQE0uZtjtd1SYyOumskWyAT2MlnJg==;EndpointSuffix=core.windows.net";
+            accountKey = "DefaultEndpointsProtocol=https;AccountName=YOUR_ACCOUNT_NAME;AccountKey=YOUR_ACCOUNT_KEY";
             objSerializer = new ObjectSerializer();
         }
 
