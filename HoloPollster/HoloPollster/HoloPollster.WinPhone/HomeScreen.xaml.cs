@@ -22,12 +22,14 @@ namespace HoloPollster.WinPhone
     /// </summary>
     public sealed partial class HomeScreen : Page
     {
+        Cloud cloud;
         public HomeScreen()
         {
             this.InitializeComponent();
             this.ViewModel = new LoginData();
             ViewModel.username = MainPage.userdata.username;
             ViewModel.password = MainPage.userdata.password;
+            cloud = new Cloud();
             //block.Text = "Welcome, " + ViewModel.username;
         }
 
@@ -41,7 +43,7 @@ namespace HoloPollster.WinPhone
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-
+            
         }
 
 
@@ -51,8 +53,9 @@ namespace HoloPollster.WinPhone
             this.Frame.Navigate(typeof(MakeAPoll));
             //Oops. Accidentally named MakeAPage at first. This calls MakeAPoll, which is MakeAPage
         }
-        private void TakeAPoll_Click(object sender, RoutedEventArgs e)
+        private async void TakeAPoll_Click(object sender, RoutedEventArgs e)
         {
+            await Cloud.RetrieveFromCloud(MainPage.polls);
             this.Frame.Navigate(typeof(PickAPoll));
         }
     }

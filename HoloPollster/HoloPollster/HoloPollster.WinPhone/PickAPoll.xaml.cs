@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -28,7 +29,7 @@ namespace HoloPollster.WinPhone
         {
             rowIndex = 0;
             this.InitializeComponent();
-            if (MainPage.polls.CreatedPolls == null)
+            if (MainPage.polls.CreatedPolls.Count == 0)
             {
                 var tex = new TextBlock();
                 tex.Text = "No Polls Created Yet!";
@@ -36,6 +37,7 @@ namespace HoloPollster.WinPhone
                 grid.RowDefinitions.Add(row);
                 Grid.SetRow(tex, 1);
                 grid.Children.Add(tex);
+                
             }
             foreach (PollsWithMetaData poll in MainPage.polls.CreatedPolls)
             {
@@ -61,6 +63,10 @@ namespace HoloPollster.WinPhone
             }
 
         }
+
+
+
+
         private void navigation(object sender, RoutedEventArgs e)
         {
 

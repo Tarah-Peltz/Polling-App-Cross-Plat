@@ -23,10 +23,12 @@ namespace HoloPollster.WinPhone
     public sealed partial class NamePoll : Page
     {
         public PollsWithMetaData newPoll;
+        private Cloud cloud;
         public NamePoll()
         {
             newPoll = new PollsWithMetaData();
             this.InitializeComponent();
+            cloud = new Cloud();
         }
 
         /// <summary>
@@ -44,9 +46,9 @@ namespace HoloPollster.WinPhone
             newPoll.PollCreator = MainPage.userdata.username;
             newPoll.CreationTime = DateTime.Now;
             newPoll.PollName = textbox.Text;
+            //no longer needed since we pull all polls from the cloud
             //MainPage.polls.CreatedPolls.Add(newPoll);
-            Cloud cloud = new Cloud();
-            await Cloud.performBlobOperation(newPoll);
+            await Cloud.UploadToCloudSerialized(newPoll);
             this.Frame.Navigate(typeof(HomeScreen));
         }
     }
