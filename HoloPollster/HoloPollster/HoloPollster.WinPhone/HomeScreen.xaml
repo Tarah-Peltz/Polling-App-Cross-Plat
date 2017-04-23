@@ -10,29 +10,30 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="4*"/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition Height="1.5*"/>
-        
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="350"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
-        <TextBlock x:Name="block" Text="{Binding Source=ViewModel.Login.username}" FontSize="36"
-            HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWholeWords"/>
-        <Button x:Name="MyStats" Grid.Column="1" HorizontalAlignment="Center"
-            VerticalAlignment="Center" Content="My Statistics"/>
-        <TextBlock Text="Welcome! What would you like to do?" Grid.ColumnSpan="2" 
-                   Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   FontSize="30" TextWrapping="WrapWholeWords"/>
-        <Button x:Name="MakeAPoll" Content="Make A Poll" Grid.Row="2" VerticalAlignment="Center"
-                HorizontalAlignment="Center" Click="MakeAPoll_Click"/>
-        <Button x:Name="TakeAPoll" Content="Take A Poll" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"
+
+        <TextBlock x:Name="block" Text="{Binding Source=ViewModel.Login.username}" FontSize="26"
+            HorizontalAlignment="Center" VerticalAlignment="Bottom" TextWrapping="WrapWholeWords" Grid.ColumnSpan="2" Margin="39,0,39,10"/>
+        <Button x:Name="MyStats" Grid.ColumnSpan="2" Grid.Row="1" HorizontalAlignment="Center"
+            VerticalAlignment="Top" Content="My Statistics"/>
+        <TextBlock Grid.ColumnSpan="3" 
+                   Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontSize="24" TextWrapping="WrapWholeWords" TextAlignment="Center">
+            <Run Text="Welcome!"/>
+            <LineBreak/>
+            <Run Text="What would you like to do?"/>
+        </TextBlock>
+        <Button x:Name="MakeAPoll" Content="Make A Poll" Grid.Row="3" VerticalAlignment="Top"
+                HorizontalAlignment="Center" Click="MakeAPoll_Click" Margin="39,0,39,5.167"/>
+        <Button x:Name="TakeAPoll" Content="Take A Poll" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top"
                 HorizontalAlignment="Center" Click="TakeAPoll_Click"/>
     </Grid>
 </Page>

@@ -55,5 +55,15 @@ namespace HoloPollster.WinPhone
         {
             this.Frame.Navigate(typeof(PickAPoll));
         }
+
+        private void MyStats_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void block_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

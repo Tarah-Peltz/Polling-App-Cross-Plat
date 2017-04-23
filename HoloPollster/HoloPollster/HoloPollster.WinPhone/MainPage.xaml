@@ -8,21 +8,21 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="4*"/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition Height="1.5*"/>
-            </Grid.RowDefinitions>
-            <TextBlock x:Name="Logo" Grid.Row="0" Text="HoloPollster" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48"/>
-        <TextBlock Text="Username:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="1" />
-        <TextBlock Text="Password:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="3" />
-        <Button Content="Welcome!" x:Name="Button" Grid.Row="5" HorizontalAlignment="Center"/>
-        <TextBox x:Name="username" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center"/>
-        <PasswordBox x:Name="password" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center"/>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="283*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="106*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="Logo" Grid.Row="0" Text="HoloPollster" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Height="58" Margin="71,111,72,113.5" Width="257"/>
+        <TextBlock Text="Username:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="1" Height="29" Margin="144,11.5,144,6.167" Width="112" />
+        <TextBlock Text="Password:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="3" Height="29" Margin="144,43.333,152,3.5" Width="104" />
+        <Button Content="Welcome!" x:Name="Button" Grid.Row="5" HorizontalAlignment="Center" Height="58" Margin="145,23.833,146,24" Width="109"/>
+        <TextBox x:Name="username" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200" Margin="100,14.833,100,8.667" Height="39"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="200" Margin="100,17.5,100,10.167" Height="39"/>
     </Grid>
-   
+
 </Page>

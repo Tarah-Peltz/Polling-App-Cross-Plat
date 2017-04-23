@@ -56,10 +56,10 @@ namespace HoloPollster.Droid
             {
 
                 button.Text = string.Format("{0} clicks!", count++);
-                Cloud.performBlobOperation("ButtonClick");
+                //Cloud.performBlobOperation("ButtonClick");
 
             };
-            await Cloud.performBlobOperation("Hello world!");
+            //await Cloud.performBlobOperation("Hello world!");
             //await Cloud.performBlobOperation();
 
         }
