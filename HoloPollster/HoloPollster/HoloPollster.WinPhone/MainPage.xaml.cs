@@ -73,7 +73,7 @@ namespace HoloPollster.WinPhone
 
                 this.Frame.Navigate(typeof(HomeScreen));
 
-                Frame.Navigate(typeof(HomeScreen));
+                
 
             };
 
