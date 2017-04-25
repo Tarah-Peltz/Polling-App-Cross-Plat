@@ -41,9 +41,9 @@ namespace HoloPollster.WinPhone
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            
+            await Cloud.RetrieveFromCloud(MainPage.polls);
         }
 
 
@@ -55,7 +55,7 @@ namespace HoloPollster.WinPhone
         }
         private async void TakeAPoll_Click(object sender, RoutedEventArgs e)
         {
-            await Cloud.RetrieveFromCloud(MainPage.polls);
+            
             this.Frame.Navigate(typeof(PickAPoll));
         }
 

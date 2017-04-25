@@ -33,6 +33,7 @@ namespace HoloPollster.WinPhone
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
             polls = new AllPollsCreated();
+            
 
 
         }
@@ -78,6 +79,28 @@ namespace HoloPollster.WinPhone
             };
 
             
+        }
+
+        private void newUser_Tapped(object sender, RoutedEventArgs e)
+        {
+            NewUserPopUp.IsOpen = true;
+        }
+
+        private void ClosePopUp_Click(object sender, RoutedEventArgs e)
+        {
+            NewUserPopUp.IsOpen = false;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (Createpassword.Password == Createpassword2.Password)
+            {
+                userdata = new LoginData();
+                username.Text = Createusername.Text;
+                password.Password = Createpassword.Password;
+                this.Frame.Navigate(typeof(HomeScreen));
+            }
+            else CreateAccount.Content = "Passwords don't match";
         }
     }
 }
