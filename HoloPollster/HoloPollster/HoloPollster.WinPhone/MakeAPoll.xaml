@@ -12,15 +12,15 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <StackPanel Name="AdderSet" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Stretch">
-                <Button Height="100" HorizontalAlignment="Stretch" Name="Adder"
+            <StackPanel Name="AdderSet" Grid.Row="0" Orientation="Horizontal" Height="640" VerticalAlignment="Bottom" Margin="10,0" RenderTransformOrigin="0.489,0.5">
+                <Button Height="100" HorizontalAlignment="Stretch" x:Name="Adder"
                     Background="PowderBlue" Content="Add a question"
-                    Foreground="Black" Click="AddQuestion" />
-                <Button Name="Finalize" Content="Create Quiz" Height="100"
+                    Foreground="Black" Click="AddQuestion" Margin="0,270" Width="194" />
+                <Button x:Name="Finalize" Content="Done! Create quiz"
                         Background="AliceBlue" Foreground="Black" HorizontalAlignment="Stretch"
-                        Click="FinalizePoll"/>
+                        Click="FinalizePoll" Margin="0,0,0,270" VerticalAlignment="Bottom" Height="100" Width="184"/>
             </StackPanel>
-            </Grid>
-        
+        </Grid>
+
     </ScrollViewer>
 </Page>

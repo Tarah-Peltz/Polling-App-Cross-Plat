@@ -26,8 +26,10 @@ namespace HoloPollster
             //serialize pollData and convert to stream for upload to azure
             MemoryStream stream = objSerializer.SerializeToStream(pollData);
             //Get storage account
+
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(accountKey);
             //open connection to azure account
+
             CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
 
             CloudBlobContainer container = blobClient.GetContainerReference("pollswithmetadata");

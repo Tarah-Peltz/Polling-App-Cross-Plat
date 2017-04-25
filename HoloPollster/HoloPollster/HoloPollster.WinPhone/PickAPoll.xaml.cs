@@ -29,15 +29,47 @@ namespace HoloPollster.WinPhone
         {
             rowIndex = 0;
             this.InitializeComponent();
+
             if (MainPage.polls.CreatedPolls.Count == 0)
+
             {
+                foreach (PollsWithMetaData poll in MainPage.polls.CreatedPolls)
+                {
+                    RowDefinition newRow = new RowDefinition();
+                    rowIndex += 1;
+                    newRow.Height = GridLength.Auto;
+                    newRow.MinHeight = 30;
+
+                    grid.RowDefinitions.Add(newRow);
+                    var MyButton = new Button();
+                    /* MyButton.Content = new TextBlock()
+                     {
+                         FontSize = 25,
+                         TextAlignment = TextAlignment.Center,
+                         TextWrapping = TextWrapping.Wrap,
+                         Text = "Name: " + poll.PollName + " Created By: " + poll.PollCreator+ " Created At: " + poll.CreationTime.ToString()
+                     };*/
+                    MyButton.Content = poll.PollName;
+                    MyButton.Click += navigation;
+                    Grid.SetRow(MyButton, rowIndex);
+                    grid.Children.Add(MyButton);
+
+                }
+            }
+            catch
+            {
+                
                 var tex = new TextBlock();
+                tex.FontSize = 24;
+                tex.TextWrapping = TextWrapping.WrapWholeWords;
+                tex.HorizontalAlignment = HorizontalAlignment.Center;
                 tex.Text = "No Polls Created Yet!";
                 RowDefinition row = new RowDefinition();
                 grid.RowDefinitions.Add(row);
                 Grid.SetRow(tex, 1);
                 grid.Children.Add(tex);
                 
+
             }
             foreach (PollsWithMetaData poll in MainPage.polls.CreatedPolls)
             {
@@ -59,6 +91,7 @@ namespace HoloPollster.WinPhone
                 MyButton.Click += navigation;
                 Grid.SetRow(MyButton, rowIndex);
                 grid.Children.Add(MyButton);
+
 
             }
 
