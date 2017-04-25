@@ -42,6 +42,7 @@ namespace HoloPollster.WinPhone
 
         private async void button_Click(object sender, RoutedEventArgs e)
         {
+            button.IsEnabled = false;
             newPoll.questions = MakeAPoll.questions;
             newPoll.PollCreator = MainPage.userdata.username;
             newPoll.CreationTime = DateTime.Now;

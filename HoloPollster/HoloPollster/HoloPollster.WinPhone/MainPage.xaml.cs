@@ -53,30 +53,8 @@ namespace HoloPollster.WinPhone
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
-            Button.Click += delegate
-            {
-                userdata = new LoginData();
-                /*polls = new AllPollsCreated();
-                PollData demoq = new PollData();
-                List<PollData> sampleList = new List<PollData>();
-                PollsWithMetaData sample = new PollsWithMetaData();
-
-                demoq.QuestionText = "This is a sample quiz";
-                demoq.type = PollData.AnswerType.TextBox;
-                sampleList.Add(demoq);
-                sample.questions = sampleList;
-                sample.CreationTime = DateTime.Now;
-                sample.PollCreator = "Tarah";
-                polls.CreatedPolls.Add(sample);
-                userdata.password = password.Password.ToString();
-                userdata.username = username.Text.ToString();*/
 
 
-                this.Frame.Navigate(typeof(HomeScreen));
-
-                
-
-            };
 
             
         }
@@ -95,12 +73,20 @@ namespace HoloPollster.WinPhone
         {
             if (Createpassword.Password == Createpassword2.Password)
             {
+                CreateAccount.IsEnabled = false;
                 userdata = new LoginData();
                 username.Text = Createusername.Text;
                 password.Password = Createpassword.Password;
                 this.Frame.Navigate(typeof(HomeScreen));
             }
             else CreateAccount.Content = "Passwords don't match";
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Button.IsEnabled = false;
+            userdata = new LoginData();
+            this.Frame.Navigate(typeof(HomeScreen));
         }
     }
 }
