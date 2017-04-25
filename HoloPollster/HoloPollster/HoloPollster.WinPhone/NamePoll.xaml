@@ -17,7 +17,9 @@
         <TextBlock x:Name="textBlock" HorizontalAlignment="Center"
                    TextWrapping="Wrap" Text="Great! Almost Done! Now name your poll." VerticalAlignment="Top" FontSize="36" Margin="25,84,43,0"/>
         <TextBox x:Name="textbox" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Your Name Here" VerticalAlignment="Top" FontSize="22" Height="49" Margin="103,64.333,109,0" Grid.Row="1" Width="188" RenderTransformOrigin="0.519,0.969"/>
-        <Button x:Name="button" Content="Submit" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Aquamarine" Foreground="Black" Click="button_Click" Margin="138,0,153,124.001" Grid.Row="2"/>
-
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,124.001" Grid.Row="2">
+            <Button x:Name="Cancel" Content="Cancel" Background="Aquamarine" Foreground="Black" Click="Cancel_Click"/>
+            <Button x:Name="button" Content="Submit" Background="Aquamarine" Foreground="Black" Click="button_Click" />
+        </StackPanel>
     </Grid>
 </Page>

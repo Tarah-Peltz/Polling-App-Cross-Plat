@@ -8,12 +8,14 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <ScrollViewer>
-    <Grid Name="grid">
+        <Grid Name="grid">
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="WrapWholeWords" Text="Which Poll Would You Like To Take?" VerticalAlignment="Center" FontSize="30"/>
-
-    </Grid>
+            <StackPanel>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="WrapWholeWords" Text="Which Poll Would You Like To Take?" VerticalAlignment="Center" FontSize="30"/>
+                <Button x:Name="Cancel"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Cancel" Background="Aquamarine" Foreground="Black" Click="Cancel_Click"/>
+            </StackPanel>
+        </Grid>
     </ScrollViewer>
 </Page>

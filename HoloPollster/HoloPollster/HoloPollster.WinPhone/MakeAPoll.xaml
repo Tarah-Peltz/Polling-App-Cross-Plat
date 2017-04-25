@@ -12,13 +12,22 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <StackPanel Name="AdderSet" Grid.Row="0" Orientation="Horizontal" Height="640" VerticalAlignment="Bottom" Margin="10,0" RenderTransformOrigin="0.489,0.5">
+            <StackPanel Name="AdderSet" Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Bottom">
+                <Button VerticalAlignment="Center" Height="100" Foreground="Black" Background="Aqua" Click="Button_Click">
+                    <Button.Content>
+                        <TextBlock TextWrapping="Wrap" Text="Back"/>
+                    </Button.Content>
+                </Button>
                 <Button Height="100" HorizontalAlignment="Stretch" x:Name="Adder"
-                    Background="PowderBlue" Content="Add a question"
-                    Foreground="Black" Click="AddQuestion" Margin="0,270" Width="194" />
-                <Button x:Name="Finalize" Content="Done! Create quiz"
-                        Background="AliceBlue" Foreground="Black" HorizontalAlignment="Stretch"
-                        Click="FinalizePoll" Margin="0,0,0,270" VerticalAlignment="Bottom" Height="100" Width="184"/>
+                    Background="SkyBlue" Content="Add a question"
+                    Foreground="Black" Click="AddQuestion" VerticalAlignment="Center"/>
+                <Button x:Name="Finalize"
+                        Background="Aqua" Foreground="Black" HorizontalAlignment="Stretch"
+                        Click="FinalizePoll" VerticalAlignment="Center" Height="100">
+                    <Button.Content>
+                        <TextBlock TextWrapping="Wrap" Text="Done! Create quiz"/>
+                    </Button.Content>
+                </Button>
             </StackPanel>
         </Grid>
 

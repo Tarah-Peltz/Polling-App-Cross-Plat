@@ -52,5 +52,10 @@ namespace HoloPollster.WinPhone
             await Cloud.UploadToCloudSerialized(newPoll);
             this.Frame.Navigate(typeof(HomeScreen));
         }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HomeScreen));
+        }
     }
 }

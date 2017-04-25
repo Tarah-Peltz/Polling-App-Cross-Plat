@@ -58,18 +58,31 @@ namespace HoloPollster.WinPhone
                 grid.Children.Add(ques);
                 grid.Children.Add(ans);
             }
+            StackPanel buttons = new StackPanel();
             Button submit = new Button();
+            Button back = new Button();
+            buttons.Orientation = Orientation.Horizontal;
             submit.Content = "Submit Poll";
             submit.Click += submitPoll;
+            back.Content = "Back";
+            back.Click += GoBack;
             RowDefinition newRow3 = new RowDefinition();
             grid.RowDefinitions.Add(newRow3);
-            Grid.SetRow(submit, rowIndex);
-            grid.Children.Add(submit);
+            Grid.SetRow(buttons, rowIndex);
+            buttons.Children.Add(back);
+            buttons.Children.Add(submit);
+            grid.Children.Add(buttons);
         }
 
         private void submitPoll(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(HomeScreen));
+        }
+
+
+        private void GoBack(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PickAPoll));
         }
 
         /// <summary>

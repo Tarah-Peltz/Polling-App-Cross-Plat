@@ -30,7 +30,7 @@ namespace HoloPollster.WinPhone
             ViewModel.username = MainPage.userdata.username;
             ViewModel.password = MainPage.userdata.password;
             cloud = new Cloud();
-            //block.Text = "Welcome, " + ViewModel.username;
+            block.Text = "Welcome, " + MainPage.userdata.username;
         }
 
         public LoginData ViewModel { get; set; }

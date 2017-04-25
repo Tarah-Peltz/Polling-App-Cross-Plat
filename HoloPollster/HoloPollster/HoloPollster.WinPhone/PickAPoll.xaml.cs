@@ -90,7 +90,12 @@ namespace HoloPollster.WinPhone
     protected override void OnNavigatedTo(NavigationEventArgs e)
     {
     }
-}
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HomeScreen));
+        }
+    }
   }
 
 
