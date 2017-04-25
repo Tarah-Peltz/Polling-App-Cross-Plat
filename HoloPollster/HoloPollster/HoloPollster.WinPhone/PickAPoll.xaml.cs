@@ -30,9 +30,17 @@ namespace HoloPollster.WinPhone
             rowIndex = 0;
             this.InitializeComponent();
 
-            if (MainPage.polls.CreatedPolls.Count == 0)
-
-            {
+            if (MainPage.polls.CreatedPolls.Count == 0) {
+                var tex = new TextBlock();
+                tex.FontSize = 24;
+                tex.TextWrapping = TextWrapping.WrapWholeWords;
+                tex.HorizontalAlignment = HorizontalAlignment.Center;
+                tex.Text = "No Polls Created Yet!";
+                RowDefinition row = new RowDefinition();
+                grid.RowDefinitions.Add(row);
+                Grid.SetRow(tex, 1);
+                grid.Children.Add(tex);
+            }else{
                 foreach (PollsWithMetaData poll in MainPage.polls.CreatedPolls)
                 {
                     RowDefinition newRow = new RowDefinition();
@@ -55,21 +63,6 @@ namespace HoloPollster.WinPhone
                     grid.Children.Add(MyButton);
 
                 }
-            }
-            catch
-            {
-                
-                var tex = new TextBlock();
-                tex.FontSize = 24;
-                tex.TextWrapping = TextWrapping.WrapWholeWords;
-                tex.HorizontalAlignment = HorizontalAlignment.Center;
-                tex.Text = "No Polls Created Yet!";
-                RowDefinition row = new RowDefinition();
-                grid.RowDefinitions.Add(row);
-                Grid.SetRow(tex, 1);
-                grid.Children.Add(tex);
-                
-
             }
             foreach (PollsWithMetaData poll in MainPage.polls.CreatedPolls)
             {
