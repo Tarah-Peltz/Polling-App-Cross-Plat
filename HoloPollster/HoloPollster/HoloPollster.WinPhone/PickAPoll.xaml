@@ -12,7 +12,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Which Poll Would You Like To Take?" VerticalAlignment="Center" FontSize="18"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="WrapWholeWords" Text="Which Poll Would You Like To Take?" VerticalAlignment="Center" FontSize="30"/>
 
     </Grid>
     </ScrollViewer>
