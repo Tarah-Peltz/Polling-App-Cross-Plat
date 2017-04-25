@@ -2,16 +2,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Schema;
 
 namespace HoloPollster
 {
+    [DataContract(Name="MetaPoll", Namespace = "holopollster")]
     public class PollsWithMetaData : IEnumerable<PollData>
     {
+        [DataMember()]
         public List<PollData> questions { get; set; }
+        [DataMember()]
         public string PollName { get; set; }
+        [DataMember()]
         public string PollCreator { get; set; }
+        [DataMember()]
         public DateTime CreationTime { get; set; }
         void PollsWithMetadata()
         {
@@ -32,9 +40,11 @@ namespace HoloPollster
             return questions.GetEnumerator();
         }
 
-        public void Add(PollData pollData)
+        public void Add(PollData p)
         {
-            questions.Add(pollData);
+            p.QuestionText = "random text";
+            //questions.Add(p);
         }
+
     }
 }

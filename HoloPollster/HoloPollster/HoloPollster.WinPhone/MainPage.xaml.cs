@@ -32,7 +32,7 @@ namespace HoloPollster.WinPhone
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
-
+            polls = new AllPollsCreated();
 
 
         }
@@ -42,7 +42,7 @@ namespace HoloPollster.WinPhone
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
-        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
 
             // TODO: Prepare page for display here.
