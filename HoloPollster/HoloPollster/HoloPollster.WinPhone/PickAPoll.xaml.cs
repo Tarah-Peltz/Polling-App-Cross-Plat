@@ -93,6 +93,7 @@ namespace HoloPollster.WinPhone
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
+            MainPage.polls.CreatedPolls.Clear();
             this.Frame.Navigate(typeof(HomeScreen));
         }
     }

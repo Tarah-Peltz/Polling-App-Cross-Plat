@@ -68,7 +68,11 @@ namespace HoloPollster
                         //deserialize data
                         PollsWithMetaData poll = await objSerializer.Deserialize(blob);
                         //add poll to local list of all polls
-                        allPolls.CreatedPolls.Add(poll);
+                        if (!allPolls.CreatedPolls.Contains(poll))
+                        {
+                            allPolls.CreatedPolls.Add(poll);
+                        }
+                        
                     }
                 }
             }
