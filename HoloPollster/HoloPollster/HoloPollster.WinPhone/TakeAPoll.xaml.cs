@@ -76,6 +76,7 @@ namespace HoloPollster.WinPhone
 
         private void submitPoll(object sender, RoutedEventArgs e)
         {
+            MainPage.polls.CreatedPolls.Clear();
             this.Frame.Navigate(typeof(HomeScreen));
         }
 

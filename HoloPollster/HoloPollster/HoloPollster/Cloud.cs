@@ -35,8 +35,10 @@ namespace HoloPollster
             CloudBlobContainer container = blobClient.GetContainerReference("pollswithmetadata");
 
             await container.CreateIfNotExistsAsync();
+
+            string blobName = pollData.CreationTime.ToString("yyyyMMddHHmmss");
             
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference("poll/TempName"); //get string version of CreationTime, remove "," and "/" from it so that azure does not create virtual directories
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference("poll/" + blobName); //get string version of CreationTime, remove "," and "/" from it so that azure does not create virtual directories
                                                                                          //Then, use this modified string as "poll/CreationTimeString" to create a unique blob name 
 
 
