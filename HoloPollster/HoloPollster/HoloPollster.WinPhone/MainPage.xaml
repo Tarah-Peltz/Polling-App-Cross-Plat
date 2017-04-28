@@ -10,22 +10,24 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="283*"/>
-            <RowDefinition Height="47*"/>
-            <RowDefinition Height="62*"/>
-            <RowDefinition Height="76*"/>
-            <RowDefinition Height="67*"/>
-            <RowDefinition Height="47*"/>
-            <RowDefinition Height="106*"/>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="88*"/>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="77*"/>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="156*"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="Logo" Grid.Row="0" Text="HoloPollster" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Height="58" Margin="71,111,72,113.5" Width="257"/>
-        <TextBlock Text="Username:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="1" Height="29" Margin="144,11.5,144,6.167" Width="112" />
-        <TextBlock Text="Password:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="3" Height="29" Margin="144,43.333,152,3.5" Width="104" />
-        <Button Content="Welcome!" x:Name="Button" Click="Button_Click_1" Grid.Row="6" HorizontalAlignment="Center" Height="58" Margin="145,23.833,146,24" Width="109"/>
-        <TextBox x:Name="username" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="200" Margin="100,14.833,100,8.667" Height="39"/>
-        <PasswordBox x:Name="password" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Width="200" Margin="100,17.5,100,10.167" Height="39"/>
-        <Button x:Name="newUser" Click="newUser_Tapped" Content="New User?" HorizontalAlignment="Center" FontSize="20" VerticalAlignment="Center" Grid.Row="5"/>
-        <Popup x:Name="NewUserPopUp" VerticalAlignment="Stretch" Visibility="Visible" IsOpen="False">
+        <TextBlock x:Name="Logo" Grid.Row="0" Text="holopollster" FontSize="70" Margin="24,23,0,0" FontFamily="Segoe WP" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="90"/>
+        <TextBlock Text="username" FontSize="20" Grid.Row="1" Margin="24,19,0,0" HorizontalAlignment="Left" Width="112" d:LayoutOverrides="VerticalAlignment, Height" Height="20" VerticalAlignment="Top" />
+        <TextBlock FontSize="24" Grid.Row="2" Margin="24,9.667,0,0" HorizontalAlignment="Left" Width="104" d:LayoutOverrides="Height" Height="20" VerticalAlignment="Top" >
+            <Run FontSize="20" Text="password"/>
+        </TextBlock>
+        <Button Content="welcome!" x:Name="Button" Click="Button_Click_1" Grid.Row="3" HorizontalAlignment="Left" Margin="24,-9.667,0,-12.167" VerticalAlignment="Top" FontSize="20" Height="96" BorderThickness="1" Width="144" Background="#FF00ABA9"/>
+        <TextBox x:Name="username" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Margin="24,44,83,9.333" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" BorderThickness="3" Height="36"/>
+        <PasswordBox x:Name="password" Grid.Row="2" VerticalAlignment="Stretch" Margin="24,34.667,83,13.667" d:LayoutOverrides="TopMargin, BottomMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" BorderThickness="3" Height="36"/>
+        <Button x:Name="newUser" Click="newUser_Tapped" Content="new user?" HorizontalAlignment="Stretch" FontSize="20" VerticalAlignment="Top" Grid.Row="3" Margin="173,-9.667,83,-12.167" Height="96" BorderThickness="1" Background="#FF00ABA9" d:LayoutOverrides="TopMargin, BottomMargin" Width="144"/>
+        <Popup x:Name="NewUserPopUp" VerticalAlignment="Stretch" Visibility="Visible" IsOpen="False" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">
             <Grid Background="#FFE5E5E5" Height="500" Width="250">
                 <Grid.RowDefinitions>
                     <RowDefinition Height=".5*"/>
