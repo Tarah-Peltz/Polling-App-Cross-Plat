@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.RegularExpressions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -33,7 +34,7 @@ namespace HoloPollster.WinPhone
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
             polls = new AllPollsCreated();
-            
+            Button.IsEnabled = false;
 
 
         }
@@ -87,6 +88,59 @@ namespace HoloPollster.WinPhone
             Button.IsEnabled = false;
             userdata = new LoginData();
             this.Frame.Navigate(typeof(HomeScreen));
+        }
+
+        private void password_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (password.Password.Length >= 1 && username.Text.Length >= 1)
+            {
+                Button.IsEnabled = true;
+            }
+            else Button.IsEnabled = false;
+        }
+
+        private void username_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var textboxSender = (TextBox)sender;
+            var cursorPosition = textboxSender.SelectionStart;
+            textboxSender.Text = Regex.Replace(textboxSender.Text, "[^0-9a-zA-Z]", "");
+            textboxSender.SelectionStart = cursorPosition;
+            if (password.Password.Length >= 1 && username.Text.Length >= 1)
+            {
+                Button.IsEnabled = true;
+            }
+            else Button.IsEnabled = false;
+        }
+
+        private void Createusername_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var textboxSender = (TextBox)sender;
+            var cursorPosition = textboxSender.SelectionStart;
+            textboxSender.Text = Regex.Replace(textboxSender.Text, "[^0-9a-zA-Z]", "");
+            textboxSender.SelectionStart = cursorPosition;
+            if (Createpassword.Password.Length >= 1 && Createpassword2.Password.Length >= 1 && Createusername.Text.Length >= 1)
+            {
+                CreateAccount.IsEnabled = true;
+            }
+            else CreateAccount.IsEnabled = false;
+        }
+
+        private void Createpassword_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (Createpassword.Password.Length >= 1 && Createpassword2.Password.Length >= 1 && Createusername.Text.Length >= 1)
+            {
+                CreateAccount.IsEnabled = true;
+            }
+            else CreateAccount.IsEnabled = false;
+        }
+
+        private void Createpassword2_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (Createpassword.Password.Length >= 1 && Createpassword2.Password.Length >= 1 && Createusername.Text.Length >= 1)
+            {
+                CreateAccount.IsEnabled = true;
+            }
+            else CreateAccount.IsEnabled = false;
         }
     }
 }
