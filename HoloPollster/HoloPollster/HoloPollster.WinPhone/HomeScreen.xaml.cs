@@ -55,7 +55,7 @@ namespace HoloPollster.WinPhone
         }
         private async void TakeAPoll_Click(object sender, RoutedEventArgs e)
         {
-            await Cloud.RetrieveFromCloud(MainPage.polls);
+            await Cloud.RetrievePollFromCloud(MainPage.polls);
             this.Frame.Navigate(typeof(PickAPoll));
         }
          

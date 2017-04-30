@@ -49,7 +49,7 @@ namespace HoloPollster.WinPhone
             newPoll.PollName = textbox.Text;
             //no longer needed since we pull all polls from the cloud
             //MainPage.polls.CreatedPolls.Add(newPoll);
-            await Cloud.UploadToCloudSerialized(newPoll);
+            await Cloud.UploadPollToCloudSerialized(newPoll);
             this.Frame.Navigate(typeof(HomeScreen));
         }
 

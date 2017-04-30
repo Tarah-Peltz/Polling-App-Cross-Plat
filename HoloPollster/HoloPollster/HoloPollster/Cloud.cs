@@ -13,15 +13,32 @@ namespace HoloPollster
     public class Cloud
     {
         private static string accountKey;
-        private static string accountName;
         private static ObjectSerializer objSerializer;
         public Cloud() {
-            accountName = "holopollster";
             accountKey = "DefaultEndpointsProtocol=https;AccountName=holopollster;AccountKey=EdZDW0Pw1v/n7mNCw7jfnMTYBI6zYuhDHrnjdxXTSOctMdc6Iu8wlOLJz+I+1HBAcS/1FkqDR0VJ/2wnFBeukA==;EndpointSuffix=core.windows.net";
             objSerializer = new ObjectSerializer();
         }
 
-        public static async Task UploadToCloudSerialized(PollsWithMetaData pollData)
+        public static async Task UploadUserToCloudSerialized(LoginData loginData)
+        {
+            MemoryStream stream = objSerializer.SerializeToStream(loginData);
+
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(accountKey);
+
+            CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+
+            CloudBlobContainer container = blobClient.GetContainerReference("logindata");
+
+            await container.CreateIfNotExistsAsync();
+
+            string blobName = loginData.username;
+
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference("user/" + blobName);
+
+            await blockBlob.UploadFromStreamAsync(stream);
+        }
+
+        public static async Task UploadPollToCloudSerialized(PollsWithMetaData pollData)
         {
             //serialize pollData and convert to stream for upload to azure
             MemoryStream stream = objSerializer.SerializeToStream(pollData);
@@ -38,8 +55,7 @@ namespace HoloPollster
 
             string blobName = pollData.CreationTime.ToString("yyyyMMddHHmmss");
             
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference("poll/" + blobName); //get string version of CreationTime, remove "," and "/" from it so that azure does not create virtual directories
-                                                                                         //Then, use this modified string as "poll/CreationTimeString" to create a unique blob name 
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference("poll/" + blobName); 
 
 
 
@@ -47,7 +63,35 @@ namespace HoloPollster
             await blockBlob.UploadFromStreamAsync(stream);
         }
 
-        public static async Task RetrieveFromCloud(AllPollsCreated allPolls)
+        public static async Task RetrieveUserFromCloud(LoginData user)
+        {
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(accountKey);
+
+            CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+
+            CloudBlobContainer container = blobClient.GetContainerReference("logindata");
+
+            if(await container.ExistsAsync())
+            {
+
+                List<IListBlobItem> results = await ListUserBlobsAsync(container);
+
+                foreach (IListBlobItem item in results)
+                {
+
+                    if (item.GetType() == typeof(CloudBlockBlob))
+                    {
+
+                        CloudBlockBlob blob = (CloudBlockBlob)item;
+
+                        //if(blob.Name == )
+                    }
+                }
+            }
+        }
+        
+
+        public static async Task RetrievePollFromCloud(AllPollsCreated allPolls)
         {
             //connect to azure account
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(accountKey);
@@ -59,7 +103,7 @@ namespace HoloPollster
             if (await container.ExistsAsync())
             {
                 //gets list of items stored in container
-                List<IListBlobItem> results = await ListBlobsAsync(container);
+                List<IListBlobItem> results = await ListPollBlobsAsync(container);
                 //iterate over items in container
                 foreach (IListBlobItem item in results)
                 {
@@ -80,7 +124,7 @@ namespace HoloPollster
             }
         }
 
-        private static async Task<List<IListBlobItem>> ListBlobsAsync(CloudBlobContainer container)
+        private static async Task<List<IListBlobItem>> ListPollBlobsAsync(CloudBlobContainer container)
         {
             BlobContinuationToken continuationToken = null;
             List<IListBlobItem> results = new List<IListBlobItem>();
@@ -97,7 +141,24 @@ namespace HoloPollster
             return results;
         }
 
-       
+        private static async Task<List<IListBlobItem>> ListUserBlobsAsync(CloudBlobContainer container)
+        {
+            BlobContinuationToken continuationToken = null;
+            List<IListBlobItem> results = new List<IListBlobItem>();
+
+            do
+            {
+                //get blobs in container with virtual directory prefix "poll/"
+                BlobResultSegment result = await container.ListBlobsSegmentedAsync("user/", continuationToken);
+                continuationToken = result.ContinuationToken;
+                //store blob in list of results
+                results.AddRange(result.Results);
+            }
+            while (continuationToken != null);
+            return results;
+        }
+
+
 
     }
 }
