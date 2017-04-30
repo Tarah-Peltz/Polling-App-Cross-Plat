@@ -13,6 +13,7 @@ namespace HoloPollster
     public class Cloud
     {
         private static string accountKey;
+        private static string accountName;
         private static ObjectSerializer objSerializer;
 
         public Cloud()
@@ -66,32 +67,7 @@ namespace HoloPollster
             await blockBlob.UploadFromStreamAsync(stream);
         }
 
-        public static async Task RetrieveUserFromCloud(LoginData user)
-        {
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(accountKey);
 
-            CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
-
-            CloudBlobContainer container = blobClient.GetContainerReference("logindata");
-
-            if(await container.ExistsAsync())
-            {
-
-                List<IListBlobItem> results = await ListUserBlobsAsync(container);
-
-                foreach (IListBlobItem item in results)
-                {
-
-                    if (item.GetType() == typeof(CloudBlockBlob))
-                    {
-
-                        CloudBlockBlob blob = (CloudBlockBlob)item;
-
-                        //if(blob.Name == )
-                    }
-                }
-            }
-        }
         
 
         public static async Task RetrievePollFromCloud(AllPollsCreated allPolls)
