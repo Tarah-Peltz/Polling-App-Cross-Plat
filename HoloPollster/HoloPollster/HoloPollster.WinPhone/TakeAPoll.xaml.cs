@@ -74,11 +74,11 @@ namespace HoloPollster.WinPhone
             grid.Children.Add(buttons);
         }
 
-        private void submitPoll(object sender, RoutedEventArgs e)
+        private async void submitPoll(object sender, RoutedEventArgs e)
         {
             MainPage.polls.CreatedPolls.Clear();
             MainPage.userdata.pollsTaken += 1;
-            Cloud.UsernameUploadToCloudSerialized(MainPage.userdata);
+            await Cloud.UsernameUploadToCloudSerialized(MainPage.userdata);
             this.Frame.Navigate(typeof(HomeScreen));
         }
 

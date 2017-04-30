@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,31 +16,11 @@ namespace HoloPollster
         private static string accountKey;
         private static string accountName;
         private static ObjectSerializer objSerializer;
-
         public Cloud()
         {
             accountName = "holopollster";
             accountKey = "DefaultEndpointsProtocol=https;AccountName=holopollster;AccountKey=EdZDW0Pw1v/n7mNCw7jfnMTYBI6zYuhDHrnjdxXTSOctMdc6Iu8wlOLJz+I+1HBAcS/1FkqDR0VJ/2wnFBeukA==;EndpointSuffix=core.windows.net";
             objSerializer = new ObjectSerializer();
-        }
-
-        public static async Task UploadUserToCloudSerialized(LoginData loginData)
-        {
-            MemoryStream stream = objSerializer.SerializeToStream(loginData);
-
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(accountKey);
-
-            CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
-
-            CloudBlobContainer container = blobClient.GetContainerReference("logindata");
-
-            await container.CreateIfNotExistsAsync();
-
-            string blobName = loginData.username;
-
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference("user/" + blobName);
-
-            await blockBlob.UploadFromStreamAsync(stream);
         }
 
         public static async Task UploadPollToCloudSerialized(PollsWithMetaData pollData)
@@ -59,16 +40,12 @@ namespace HoloPollster
 
             string blobName = pollData.CreationTime.ToString("yyyyMMddHHmmss");
 
-
             CloudBlockBlob blockBlob = container.GetBlockBlobReference("poll/" + blobName); //get string version of CreationTime, remove "," and "/" from it so that azure does not create virtual directories
                                                                                             //Then, use this modified string as "poll/CreationTimeString" to create a unique blob name 
 
             //create new blob storing serialized data
             await blockBlob.UploadFromStreamAsync(stream);
         }
-
-
-        
 
         public static async Task RetrievePollFromCloud(AllPollsCreated allPolls)
         {
@@ -82,7 +59,7 @@ namespace HoloPollster
             if (await container.ExistsAsync())
             {
                 //gets list of items stored in container
-                List<IListBlobItem> results = await ListPollBlobsAsync(container);
+                List<IListBlobItem> results = await ListBlobsAsync(container);
                 //iterate over items in container
                 foreach (IListBlobItem item in results)
                 {
@@ -103,7 +80,7 @@ namespace HoloPollster
             }
         }
 
-        private static async Task<List<IListBlobItem>> ListPollBlobsAsync(CloudBlobContainer container)
+        private static async Task<List<IListBlobItem>> ListBlobsAsync(CloudBlobContainer container)
         {
             BlobContinuationToken continuationToken = null;
             List<IListBlobItem> results = new List<IListBlobItem>();
@@ -119,7 +96,6 @@ namespace HoloPollster
             while (continuationToken != null);
             return results;
         }
-
 
         public static async Task UsernameUploadToCloudSerialized(LoginData userData)
         {
@@ -137,10 +113,10 @@ namespace HoloPollster
             await container.CreateIfNotExistsAsync();
 
             string blobName = userData.username;
-            
+
 
             CloudBlockBlob blockBlob = container.GetBlockBlobReference("username/" + blobName);
-            await blockBlob.UploadFromStreamAsync(stream); 
+            await blockBlob.UploadFromStreamAsync(stream);
         }
 
         public static async Task<LoginData> UsernameRetrieveFromCloud(string loginInfo, LoginData infoFound)
@@ -178,7 +154,7 @@ namespace HoloPollster
 
                     }
                 }
-                
+
             }
             return null;
         }
