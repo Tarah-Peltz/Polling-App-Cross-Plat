@@ -1,17 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace HoloPollster
 {
+    [DataContract(Name = "Username", Namespace = "holopollster")]
     public class LoginData
     {
+        [DataMember()]
         public string username { get; set; }
+        [DataMember()]
         public string password { get; set; }
-        public int pollsTaken;
-        public int pollsCreated;
+        [DataMember()]
+        public int pollsTaken { get; set; }
+        [DataMember()]
+        public int pollsCreated { get; set; }
         public LoginData()
         {
             this.username = "default";

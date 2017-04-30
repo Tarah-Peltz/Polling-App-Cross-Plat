@@ -114,8 +114,8 @@ namespace HoloPollster
             string blobName = userData.username;
             
 
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference("username/" + blobName); 
-            
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference("username/" + blobName);
+            await blockBlob.UploadFromStreamAsync(stream); 
         }
 
         public static async Task<LoginData> UsernameRetrieveFromCloud(string loginInfo, LoginData infoFound)
