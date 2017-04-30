@@ -21,15 +21,14 @@
         </Grid.ColumnDefinitions>
 
         <TextBlock x:Name="block" Text="{Binding Source=ViewModel.Login.username}" FontSize="42.667" TextWrapping="WrapWholeWords" Style="{StaticResource HeaderTextBlockStyle}" Margin="24,43,0,0.333" Grid.ColumnSpan="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
-        <Button x:Name="MyStats" Content="see statistics" Margin="22.671,-6.336,98.248,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Row="3" FontSize="20" Height="96" BorderThickness="1" Background="#FF00ABA9" d:LayoutOverrides="TopMargin, BottomMargin, LeftPosition, RightPosition" Grid.ColumnSpan="2">
+        <Button x:Name="MyStats" Content="see statistics" Margin="22.671,-6.336,98.248,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Row="3" FontSize="20" Height="96" BorderThickness="1" Background="#FF00ABA9" 
+                d:LayoutOverrides="TopMargin, BottomMargin, LeftPosition, RightPosition" Grid.ColumnSpan="2" Click="MyStats_Click_1">
             <Button.RenderTransform>
                 <CompositeTransform SkewX="0.525" TranslateX="0.408"/>
             </Button.RenderTransform>
         </Button>
         <TextBlock
                    FontSize="22.67" TextWrapping="WrapWholeWords" Style="{StaticResource BaseTextBlockStyle}" Margin="24,-0.083,89,1.25" Grid.Row="1" Padding="2,0,0,0" Grid.ColumnSpan="2" d:LayoutOverrides="LeftMargin, RightMargin, TopPosition, BottomPosition" VerticalAlignment="Bottom">
-            <Run Text="welcome!"/>
-            <LineBreak/>
             <Run Text="what would you like to do?"/>
         </TextBlock>
         <Button x:Name="MakeAPoll" Content="make a poll" Click="MakeAPoll_Click" Margin="24,-6.667,48,-8.833" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="2" FontSize="20" BorderThickness="1" HorizontalContentAlignment="Left" Background="#FF00ABA9" d:LayoutOverrides="LeftMargin, RightMargin" Width="144" Height="96"/>

@@ -10,10 +10,14 @@ namespace HoloPollster
     {
         public string username { get; set; }
         public string password { get; set; }
+        public int pollsTaken;
+        public int pollsCreated;
         public LoginData()
         {
             this.username = "default";
             this.password = "default";
+            pollsCreated = 0;
+            pollsTaken = 0;
         }
         public string welcomeMessage
         {

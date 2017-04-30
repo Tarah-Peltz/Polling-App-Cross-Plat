@@ -29,13 +29,15 @@ namespace HoloPollster.WinPhone
         static public AllPollsCreated polls;
         static public string Username;
         static public string Password;
+        Cloud cloud;
         public MainPage()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
             polls = new AllPollsCreated();
             Button.IsEnabled = false;
-
+            userdata = new LoginData();
+            cloud = new Cloud();
 
         }
 
@@ -70,24 +72,44 @@ namespace HoloPollster.WinPhone
             NewUserPopUp.IsOpen = false;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (Createpassword.Password == Createpassword2.Password)
+
+            await Cloud.UsernameRetrieveFromCloud(Createusername.Text, userdata);
+            if (userdata.username != "default")
+            {
+                CreateAccount.Content = "Username already in use";
+            }
+            else if (Createpassword.Password == Createpassword2.Password)
             {
                 CreateAccount.IsEnabled = false;
-                userdata = new LoginData();
-                username.Text = Createusername.Text;
-                password.Password = Createpassword.Password;
+                userdata.username = Createusername.Text;
+                userdata.password = Createpassword.Password;
+                await Cloud.UsernameUploadToCloudSerialized(userdata);
                 this.Frame.Navigate(typeof(HomeScreen));
             }
             else CreateAccount.Content = "Passwords don't match";
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Button.IsEnabled = false;
-            userdata = new LoginData();
-            this.Frame.Navigate(typeof(HomeScreen));
+            await Cloud.UsernameRetrieveFromCloud(username.Text, userdata);
+            if (userdata.username == "default")
+            {
+                Button.Content = "Incorrect username";
+            }
+            else if (userdata.password != password.Password)
+            {
+                Button.Content = "Incorrect password";
+            }
+            else
+            {
+                Button.IsEnabled = false;
+                userdata = new LoginData();
+                userdata.username = username.Text;
+                userdata.password = password.Password;
+                this.Frame.Navigate(typeof(HomeScreen));
+            }
         }
 
         private void password_PasswordChanged(object sender, RoutedEventArgs e)

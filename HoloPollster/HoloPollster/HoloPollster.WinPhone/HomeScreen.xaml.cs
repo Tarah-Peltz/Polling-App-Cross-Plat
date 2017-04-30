@@ -31,6 +31,7 @@ namespace HoloPollster.WinPhone
             ViewModel.password = MainPage.userdata.password;
             cloud = new Cloud();
             block.Text = "Welcome, " + MainPage.userdata.username;
+            block.TextWrapping = TextWrapping.Wrap;
         }
 
         public LoginData ViewModel { get; set; }
@@ -67,6 +68,12 @@ namespace HoloPollster.WinPhone
         private void block_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private async void MyStats_Click_1(object sender, RoutedEventArgs e)
+        {
+            await Cloud.UsernameRetrieveFromCloud(MainPage.userdata.username, MainPage.userdata); //gets latest data
+            this.Frame.Navigate(typeof(Stats));
         }
     }
 }
