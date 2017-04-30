@@ -20,15 +20,14 @@ namespace HoloPollster.WinPhone
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class NamePoll : Page
+    public sealed partial class Stats : Page
     {
-        public PollsWithMetaData newPoll;
-        private Cloud cloud;
-        public NamePoll()
+        public Stats()
         {
-            newPoll = new PollsWithMetaData();
             this.InitializeComponent();
-            cloud = new Cloud();
+            Statistics.Text = "Welcome, " + MainPage.userdata.username + ".";
+            Taken.Text = "Polls Taken: " + MainPage.userdata.pollsTaken.ToString() + ".";
+            Created.Text = "Polls Created: " + MainPage.userdata.pollsCreated.ToString() + ".";
         }
 
         /// <summary>
@@ -40,22 +39,7 @@ namespace HoloPollster.WinPhone
         {
         }
 
-        private async void button_Click(object sender, RoutedEventArgs e)
-        {
-            MainPage.userdata.pollsCreated += 1;
-            Cloud.UsernameUploadToCloudSerialized(MainPage.userdata);
-            button.IsEnabled = false;
-            newPoll.questions = MakeAPoll.questions;
-            newPoll.PollCreator = MainPage.userdata.username;
-            newPoll.CreationTime = DateTime.Now;
-            newPoll.PollName = textbox.Text;
-            //no longer needed since we pull all polls from the cloud
-            //MainPage.polls.CreatedPolls.Add(newPoll);
-            await Cloud.UploadPollToCloudSerialized(newPoll);
-            this.Frame.Navigate(typeof(HomeScreen));
-        }
-
-        private void Cancel_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(HomeScreen));
         }

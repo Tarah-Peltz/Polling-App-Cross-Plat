@@ -13,8 +13,8 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <StackPanel>
-                <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="WrapWholeWords" Text="Which Poll Would You Like To Take?" VerticalAlignment="Center" FontSize="30"/>
-                <Button x:Name="Cancel"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Cancel" Background="Aquamarine" Foreground="Black" Click="Cancel_Click"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="WrapWholeWords" Text="which poll would you like to take?" VerticalAlignment="Center" FontSize="30" Margin="15,0"/>
+                <Button x:Name="Cancel"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Content="Cancel" Background="#FF00ABA9" Foreground="White" Click="Cancel_Click" Margin="12,0,0,0" BorderThickness="1" Height="96"/>
             </StackPanel>
         </Grid>
     </ScrollViewer>

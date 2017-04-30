@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.RegularExpressions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -28,13 +29,15 @@ namespace HoloPollster.WinPhone
         static public AllPollsCreated polls;
         static public string Username;
         static public string Password;
+        Cloud cloud;
         public MainPage()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
             polls = new AllPollsCreated();
-            
-
+            Button.IsEnabled = false;
+            userdata = new LoginData();
+            cloud = new Cloud();
 
         }
 
@@ -69,24 +72,97 @@ namespace HoloPollster.WinPhone
             NewUserPopUp.IsOpen = false;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (Createpassword.Password == Createpassword2.Password)
+
+            var result = await Cloud.UsernameRetrieveFromCloud(Createusername.Text, userdata);
+            if (userdata.username != "default" || result != null)
+            {
+                CreateAccount.Content = "Username already in use";
+            }
+            else if (Createpassword.Password == Createpassword2.Password)
             {
                 CreateAccount.IsEnabled = false;
-                userdata = new LoginData();
-                username.Text = Createusername.Text;
-                password.Password = Createpassword.Password;
+                userdata.username = Createusername.Text;
+                userdata.password = Createpassword.Password;
+                await Cloud.UsernameUploadToCloudSerialized(userdata);
                 this.Frame.Navigate(typeof(HomeScreen));
             }
             else CreateAccount.Content = "Passwords don't match";
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Button.IsEnabled = false;
-            userdata = new LoginData();
-            this.Frame.Navigate(typeof(HomeScreen));
+            var result = await Cloud.UsernameRetrieveFromCloud(username.Text, userdata);
+            if (userdata.username == "default" || result == null)
+            {
+                Button.Content = "Incorrect username";
+            }
+            else if (userdata.password != password.Password)
+            {
+                Button.Content = "Incorrect password";
+            }
+            else
+            {
+                Button.IsEnabled = false;
+                userdata = new LoginData();
+                userdata.username = username.Text;
+                userdata.password = password.Password;
+                this.Frame.Navigate(typeof(HomeScreen));
+            }
+        }
+
+        private void password_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (password.Password.Length >= 1 && username.Text.Length >= 1)
+            {
+                Button.IsEnabled = true;
+            }
+            else Button.IsEnabled = false;
+        }
+
+        private void username_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var textboxSender = (TextBox)sender;
+            var cursorPosition = textboxSender.SelectionStart;
+            textboxSender.Text = Regex.Replace(textboxSender.Text, "[^0-9a-zA-Z]", "");
+            textboxSender.SelectionStart = cursorPosition;
+            if (password.Password.Length >= 1 && username.Text.Length >= 1)
+            {
+                Button.IsEnabled = true;
+            }
+            else Button.IsEnabled = false;
+        }
+
+        private void Createusername_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var textboxSender = (TextBox)sender;
+            var cursorPosition = textboxSender.SelectionStart;
+            textboxSender.Text = Regex.Replace(textboxSender.Text, "[^0-9a-zA-Z]", "");
+            textboxSender.SelectionStart = cursorPosition;
+            if (Createpassword.Password.Length >= 1 && Createpassword2.Password.Length >= 1 && Createusername.Text.Length >= 1)
+            {
+                CreateAccount.IsEnabled = true;
+            }
+            else CreateAccount.IsEnabled = false;
+        }
+
+        private void Createpassword_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (Createpassword.Password.Length >= 1 && Createpassword2.Password.Length >= 1 && Createusername.Text.Length >= 1)
+            {
+                CreateAccount.IsEnabled = true;
+            }
+            else CreateAccount.IsEnabled = false;
+        }
+
+        private void Createpassword2_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (Createpassword.Password.Length >= 1 && Createpassword2.Password.Length >= 1 && Createusername.Text.Length >= 1)
+            {
+                CreateAccount.IsEnabled = true;
+            }
+            else CreateAccount.IsEnabled = false;
         }
     }
 }

@@ -10,30 +10,28 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100*"/>
-            <RowDefinition Height="100*"/>
-            <RowDefinition Height="100*"/>
-            <RowDefinition Height="350"/>
+            <RowDefinition Height="133*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="82*"/>
+            <RowDefinition Height="345.5"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock x:Name="block" Text="{Binding Source=ViewModel.Login.username}" FontSize="26"
-            HorizontalAlignment="Center" VerticalAlignment="Bottom" TextWrapping="WrapWholeWords" Grid.ColumnSpan="2" Margin="39,0,39,10"/>
-        <Button x:Name="MyStats" Grid.ColumnSpan="2" Grid.Row="1" HorizontalAlignment="Center"
-            VerticalAlignment="Top" Content="My Statistics"/>
-        <TextBlock Grid.ColumnSpan="3" 
-                   Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   FontSize="24" TextWrapping="WrapWholeWords" TextAlignment="Center">
-            <Run Text="Welcome!"/>
-            <LineBreak/>
-            <Run Text="What would you like to do?"/>
+        <TextBlock x:Name="block" Text="{Binding Source=ViewModel.Login.username}" FontSize="42.667" TextWrapping="WrapWholeWords" Style="{StaticResource HeaderTextBlockStyle}" Margin="24,43,0,0.333" Grid.ColumnSpan="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <Button x:Name="MyStats" Content="see statistics" Margin="22.671,-6.336,98.248,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Grid.Row="3" FontSize="20" Height="96" BorderThickness="1" Background="#FF00ABA9" 
+                d:LayoutOverrides="TopMargin, BottomMargin, LeftPosition, RightPosition" Grid.ColumnSpan="2" Click="MyStats_Click_1">
+            <Button.RenderTransform>
+                <CompositeTransform SkewX="0.525" TranslateX="0.408"/>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock
+                   FontSize="22.67" TextWrapping="WrapWholeWords" Style="{StaticResource BaseTextBlockStyle}" Margin="24,-0.083,89,1.25" Grid.Row="1" Padding="2,0,0,0" Grid.ColumnSpan="2" d:LayoutOverrides="LeftMargin, RightMargin, TopPosition, BottomPosition" VerticalAlignment="Bottom">
+            <Run Text="what would you like to do?"/>
         </TextBlock>
-        <Button x:Name="MakeAPoll" Content="Make A Poll" Grid.Row="3" VerticalAlignment="Top"
-                HorizontalAlignment="Center" Click="MakeAPoll_Click" Margin="39,0,39,5.167"/>
-        <Button x:Name="TakeAPoll" Content="Take A Poll" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top"
-                HorizontalAlignment="Center" Click="TakeAPoll_Click"/>
+        <Button x:Name="MakeAPoll" Content="make a poll" Click="MakeAPoll_Click" Margin="24,-6.667,48,-8.833" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="2" FontSize="20" BorderThickness="1" HorizontalContentAlignment="Left" Background="#FF00ABA9" d:LayoutOverrides="LeftMargin, RightMargin" Width="144" Height="96"/>
+        <Button x:Name="TakeAPoll" Content="take a poll" Click="TakeAPoll_Click" Margin="-43,-6.667,0,-8.833" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Row="2" FontSize="20" Width="144" BorderThickness="1" Background="#FF00ABA9" Grid.Column="1" d:LayoutOverrides="HorizontalAlignment, LeftMargin, RightMargin" Height="96"/>
     </Grid>
 </Page>

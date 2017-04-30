@@ -77,6 +77,8 @@ namespace HoloPollster.WinPhone
         private void submitPoll(object sender, RoutedEventArgs e)
         {
             MainPage.polls.CreatedPolls.Clear();
+            MainPage.userdata.pollsTaken += 1;
+            Cloud.UsernameUploadToCloudSerialized(MainPage.userdata);
             this.Frame.Navigate(typeof(HomeScreen));
         }
 
