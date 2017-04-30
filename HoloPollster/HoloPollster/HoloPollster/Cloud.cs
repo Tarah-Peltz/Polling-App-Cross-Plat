@@ -118,7 +118,7 @@ namespace HoloPollster
             
         }
 
-        public static async Task UsernameRetrieveFromCloud(string loginInfo, LoginData infoFound)
+        public static async Task<LoginData> UsernameRetrieveFromCloud(string loginInfo, LoginData infoFound)
         {
 
             //connect to azure account
@@ -148,11 +148,14 @@ namespace HoloPollster
                             infoFound.password = user.password;
                             infoFound.pollsCreated = user.pollsCreated;
                             infoFound.pollsTaken = user.pollsTaken;
+                            return user;
                         }
 
                     }
                 }
+                
             }
+            return null;
         }
         private static async Task<List<IListBlobItem>> UsernameListBlobsAsync(CloudBlobContainer container)
         {

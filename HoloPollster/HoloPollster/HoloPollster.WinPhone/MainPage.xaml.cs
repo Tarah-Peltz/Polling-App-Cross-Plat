@@ -75,8 +75,8 @@ namespace HoloPollster.WinPhone
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            await Cloud.UsernameRetrieveFromCloud(Createusername.Text, userdata);
-            if (userdata.username != "default")
+            var result = await Cloud.UsernameRetrieveFromCloud(Createusername.Text, userdata);
+            if (userdata.username != "default" || result != null)
             {
                 CreateAccount.Content = "Username already in use";
             }
@@ -93,8 +93,8 @@ namespace HoloPollster.WinPhone
 
         private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            await Cloud.UsernameRetrieveFromCloud(username.Text, userdata);
-            if (userdata.username == "default")
+            var result = await Cloud.UsernameRetrieveFromCloud(username.Text, userdata);
+            if (userdata.username == "default" || result == null)
             {
                 Button.Content = "Incorrect username";
             }

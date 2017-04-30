@@ -72,7 +72,8 @@ namespace HoloPollster.WinPhone
 
         private async void MyStats_Click_1(object sender, RoutedEventArgs e)
         {
-            await Cloud.UsernameRetrieveFromCloud(MainPage.userdata.username, MainPage.userdata); //gets latest data
+            var result = await Cloud.UsernameRetrieveFromCloud(MainPage.userdata.username, MainPage.userdata); //gets latest data
+            if (result == null) { }
             this.Frame.Navigate(typeof(Stats));
         }
     }
