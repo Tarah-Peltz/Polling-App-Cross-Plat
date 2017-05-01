@@ -18,7 +18,7 @@
             <RowDefinition Height="37*"/>
             <RowDefinition Height="156*"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="Logo" Grid.Row="0" Text="holopollster" FontSize="70" Margin="24,23,0,0" FontFamily="Segoe WP" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="90"/>
+        <TextBlock x:Name="Logo" Grid.Row="0" Text="pollster" FontSize="70" Margin="24,23,0,0" FontFamily="Segoe WP" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="90"/>
         <TextBlock Text="username" FontSize="20" Grid.Row="1" Margin="24,19,0,0" HorizontalAlignment="Left" Width="112" d:LayoutOverrides="VerticalAlignment, Height" Height="20" VerticalAlignment="Top" />
         <TextBlock FontSize="24" Grid.Row="2" Margin="24,9.667,0,0" HorizontalAlignment="Left" Width="104" d:LayoutOverrides="Height" Height="20" VerticalAlignment="Top" >
             <Run FontSize="20" Text="password"/>
@@ -27,8 +27,8 @@
         <TextBox x:Name="username" Grid.Row="1" MaxLength="25" TextChanged="username_TextChanged" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" Margin="24,44,83,9.333" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" BorderThickness="3" Height="36"/>
         <PasswordBox x:Name="password" Grid.Row="2" PasswordChanged="password_PasswordChanged" MaxLength="25" VerticalAlignment="Stretch" Margin="24,34.667,83,13.667" d:LayoutOverrides="TopMargin, BottomMargin, LeftPosition, RightPosition, TopPosition, BottomPosition" BorderThickness="3" Height="36"/>
         <Button x:Name="newUser" Click="newUser_Tapped" Content="new user?" HorizontalAlignment="Stretch" FontSize="20" VerticalAlignment="Top" Grid.Row="3" Margin="173,-9.667,83,-12.167" Height="96" BorderThickness="1" Background="#FF00ABA9" d:LayoutOverrides="TopMargin, BottomMargin" Width="144"/>
-        <Popup x:Name="NewUserPopUp" VerticalAlignment="Stretch" Visibility="Visible" IsOpen="False" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">
-            <Grid Background="#FFE5E5E5" Height="500" Width="250">
+        <Popup x:Name="NewUserPopUp" Margin="20, 0, 0, 0" VerticalAlignment="Stretch" Visibility="Visible" IsOpen="False" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">
+            <Grid Background="Black" Height="500" Width="350">
                 <Grid.RowDefinitions>
                     <RowDefinition Height=".5*"/>
                     <RowDefinition/>
@@ -40,13 +40,13 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Button x:Name="ClosePopUp" Click="ClosePopUp_Click" Height="25" Width="25" HorizontalAlignment="Right" Background="PaleVioletRed" Content="X"/>
-                <TextBlock Text="Username:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="1" Foreground="Black" />
-                <TextBlock Text="Password:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="3" Foreground="Black" />
-                <TextBlock Text="Confirm Password:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="5" Foreground="Black" />
+                <TextBlock Text="Username:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="1" Foreground="White" />
+                <TextBlock Text="Password:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="3" Foreground="white" />
+                <TextBlock Text="Confirm Password:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="5" Foreground="white" />
                 <TextBox x:Name="Createusername" TextChanged="Createusername_TextChanged" MaxLength="25" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
                 <PasswordBox x:Name="Createpassword" MaxLength="25" PasswordChanged="Createpassword_PasswordChanged" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center"/>
                 <PasswordBox x:Name="Createpassword2" MaxLength="25" PasswordChanged="Createpassword2_PasswordChanged" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center"/>
-                <Button x:Name="CreateAccount" Grid.Row="7" Content="Create Account" HorizontalAlignment="Center" Background="Aqua" Foreground="Black" Click="Button_Click"/>
+                <Button x:Name="CreateAccount" Grid.Row="7" Content="Create Account" HorizontalAlignment="Center" BorderThickness="1" Background="#FF00ABA9" Foreground="white" Click="Button_Click"/>
             </Grid>
         </Popup>
 

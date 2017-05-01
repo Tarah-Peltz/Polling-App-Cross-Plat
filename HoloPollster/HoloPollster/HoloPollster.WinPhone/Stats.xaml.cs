@@ -26,8 +26,10 @@ namespace HoloPollster.WinPhone
         {
             this.InitializeComponent();
             Statistics.Text = "Welcome, " + MainPage.userdata.username + ".";
-            Taken.Text = "Polls Taken: " + MainPage.userdata.pollsTaken.ToString() + ".";
-            Created.Text = "Polls Created: " + MainPage.userdata.pollsCreated.ToString() + ".";
+            Statistics.TextWrapping = TextWrapping.WrapWholeWords;
+            Taken.Text = "Polls Taken: " + MainPage.userdata.pollsTaken.ToString() ;
+            Created.Text = "Polls Created: " + MainPage.userdata.pollsCreated.ToString() ;
+            Unlocked.Text = "Games Unlocked: " + (MainPage.userdata.pollsCreated + MainPage.userdata.pollsTaken).ToString();
         }
 
         /// <summary>

@@ -9,11 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel>
-            <TextBlock x:Name="Statistics"/>
-            <TextBlock x:Name="Created"/>
-            <TextBlock x:Name="Taken"/>
-            <Button x:Name="Back" Content="Back" Click="Back_Click"/>
+        <StackPanel HorizontalAlignment="Stretch">
+
+            <TextBlock x:Name="Statistics" FontSize="40" Foreground="White" Text="ph"/>
+            <TextBlock x:Name="Created" FontSize="20" Foreground="White" Text="ph"/>
+            <TextBlock x:Name="Taken" FontSize="20" Foreground="White" Text="ph"/>
+
+            <TextBlock x:Name="Unlocked" FontSize="20" Foreground="White" Text="ph"/>
+            <Button x:Name="Back" Background="#FF00ABA9" BorderBrush="White" Content="Back" Click="Back_Click"/>
         </StackPanel>
     </Grid>
 </Page>
