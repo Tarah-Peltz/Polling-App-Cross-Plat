@@ -14,7 +14,7 @@ Each game has its own folder. Each game folder contains the game code and an .ex
 * /Roll-a-ball_Demo  
 ### HoloPollster Windows Phone app repo
 https://github.com/Tarah-Peltz/Polling-App-Cross-Plat  
-The main directory contains two folders. /HoloPollster contains the app code and solution file. /AutoDoc contains the website for the auto-documentation. 
+The main directory contains three folders. /HoloPollster contains the app code and solution file. /AutoDoc contains the website for the auto-documentation. /TestCases contains TESTING.md, the testing document from project "part 4"  and a screenshot of the unit tests.
 
 ## Build/Run/Test  
 * To launch a Unity game, download the folder containing the game (or clone the repo) and open the game's .exe file.  Either method is fine as long as the user has both the executable and the respective data folder. Without the latter, the .exe will not run.  
