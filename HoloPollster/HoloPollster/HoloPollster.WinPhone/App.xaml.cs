@@ -1,17 +1,4 @@
-﻿// ***********************************************************************
-// Assembly         : HoloPollster.WinPhone
-// Author           : 
-// Created          : 05-04-2017
-//
-// Last Modified By : 
-// Last Modified On : 05-04-2017
-// ***********************************************************************
-// <copyright file="App.xaml.cs" company="">
-//     Copyright ©  2015
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
