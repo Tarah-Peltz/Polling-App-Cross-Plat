@@ -66,6 +66,7 @@ namespace HoloPollster.WinPhone
             close.VerticalAlignment = VerticalAlignment.Top;
             newBut.OnContent = "TextBox";
             newBut.OffContent = "Radio Buttons";
+            newBut.IsOn = true;
             text.Text = "Your Question Here";
             Grid.SetRow(close, rowIndex - 3);
             Grid.SetRow(newBut, rowIndex - 2);

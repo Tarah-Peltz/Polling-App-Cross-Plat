@@ -75,20 +75,20 @@ namespace HoloPollster.WinPhone
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            /*var result = await Cloud.UsernameRetrieveFromCloud(Createusername.Text, userdata);
+            var result = await Cloud.UsernameRetrieveFromCloud(Createusername.Text, userdata);
             if (userdata.username != "default" || result != null)
             {
                 CreateAccount.Content = "Username already in use";
             }
             else if (Createpassword.Password == Createpassword2.Password)
-            {*/
+            {
                 CreateAccount.IsEnabled = false;
                 userdata.username = Createusername.Text;
                 userdata.password = Createpassword.Password;
-               // await Cloud.UsernameUploadToCloudSerialized(userdata);
+                await Cloud.UsernameUploadToCloudSerialized(userdata);
                 this.Frame.Navigate(typeof(HomeScreen));
-           /* }
-            else CreateAccount.Content = "Passwords don't match"; */
+            }
+            else CreateAccount.Content = "Passwords don't match"; 
         }
 
         private async void Button_Click_1(object sender, RoutedEventArgs e)
