@@ -10,25 +10,26 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="34*"/>
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="107*"/>
+            <RowDefinition Height="136*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="428*"/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="textBlock"
-                   TextWrapping="Wrap" FontSize="32" Margin="24,49,81,9.833">
+                   TextWrapping="Wrap" FontSize="32" Margin="24,49,81,-0.333" VerticalAlignment="Bottom">
             <Run Text="great! almost done! "/>
             <LineBreak/>
             <Run Text="now name your poll."/>
         </TextBlock>
-        <TextBox x:Name="textbox" TextWrapping="Wrap" Text="Your Name Here" VerticalAlignment="Bottom" FontSize="20" Height="33.166" Margin="23.17,0,0,0.834" Grid.Row="1" RenderTransformOrigin="0.519,0.969" UseLayoutRounding="False" d:LayoutRounding="Auto" HorizontalAlignment="Left" Width="295.866" VerticalContentAlignment="Top" d:LayoutOverrides="VerticalAlignment" HorizontalContentAlignment="Left">
+        <TextBox x:Name="textbox" TextWrapping="Wrap" Text="Your Name Here" VerticalAlignment="Bottom" FontSize="20" Height="29.612" Margin="24,0,0,1.754" Grid.Row="2" RenderTransformOrigin="0.519,0.969" UseLayoutRounding="False" d:LayoutRounding="Auto" HorizontalAlignment="Left" Width="349.279" VerticalContentAlignment="Top" HorizontalContentAlignment="Left">
             <TextBox.RenderTransform>
                 <CompositeTransform SkewX="-1.136" TranslateX="-0.673"/>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="27" Margin="24,10.167,0,0" Grid.Row="1" TextWrapping="Wrap" Text="your name" Width="112" FontSize="20" VerticalAlignment="Top"/>
-        <StackPanel Orientation="Horizontal" Margin="24,-8.667,0,0" Grid.Row="2" HorizontalAlignment="Left" Width="295" Height="88" VerticalAlignment="Top">
-            <Button x:Name="Cancel" Content="Cancel" Background="#FF00ABA9" Foreground="White" Click="Cancel_Click" Margin="2,0.5,2,-8.167" Width="144" Padding="2,0,2,3.5" UseLayoutRounding="False" VerticalAlignment="Top" HorizontalAlignment="Center" Height="96" MinWidth="106" BorderThickness="1"/>
-            <Button x:Name="button" Content="Submit" Background="#FF00ABA9" Foreground="White" Click="button_Click" Margin="2,0,2,-9.667" Width="145" Height="96" BorderThickness="1" />
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="24,0,0,4.833" Grid.Row="1" TextWrapping="Wrap" Text="your name" Width="112" FontSize="20" VerticalAlignment="Bottom"/>
+        <StackPanel Orientation="Horizontal" Margin="12,-8.666,0,0" Grid.Row="3" HorizontalAlignment="Left" Width="361" Height="88" VerticalAlignment="Top">
+            <Button x:Name="Cancel" Content="cancel" Background="#FF00ABA9" Foreground="White" Click="Cancel_Click" Margin="11,1,1,-7.667" Width="186.126" Padding="2,0,2,3.5" UseLayoutRounding="False" VerticalAlignment="Top" HorizontalAlignment="Left" Height="95" MinWidth="106" BorderThickness="1" FontSize="20"/>
+            <Button x:Name="button" Content="submit" Background="#FF00ABA9" Foreground="White" Click="button_Click" Margin="1,1,12,-8.667" Width="164" Height="96" BorderThickness="1" HorizontalAlignment="Right" FontSize="20" VerticalAlignment="Top" />
         </StackPanel>
     </Grid>
 </Page>

@@ -8,15 +8,11 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <StackPanel HorizontalAlignment="Stretch">
-
-            <TextBlock x:Name="Statistics" FontSize="40" Foreground="White" Text="ph"/>
-            <TextBlock x:Name="Created" FontSize="20" Foreground="White" Text="ph"/>
-            <TextBlock x:Name="Taken" FontSize="20" Foreground="White" Text="ph"/>
-
-            <TextBlock x:Name="Unlocked" FontSize="20" Foreground="White" Text="ph"/>
-            <Button x:Name="Back" Background="#FF00ABA9" BorderBrush="White" Content="Back" Click="Back_Click"/>
-        </StackPanel>
-    </Grid>
+    <StackPanel d:LayoutOverrides="LeftPosition, RightPosition" Margin="0,53.333,0,-0.333">
+        <TextBlock x:Name="Statistics" FontSize="40" Foreground="White" Text="ph" Margin="24,0,38,0" Height="78" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="Taken" FontSize="20" Foreground="White" Text="ph" Margin="24,4,24,0" Height="37"/>
+        <TextBlock x:Name="Unlocked" FontSize="20" Foreground="White" Text="ph" Margin="24,4,0,0" Height="38"/>
+        <TextBlock x:Name="Created" FontSize="20" Foreground="White" Text="ph" Margin="24,0" d:LayoutOverrides="Width, LeftMargin, RightMargin" Height="37" VerticalAlignment="Bottom"/>
+        <Button x:Name="Back" Background="#FF00ABA9" BorderBrush="White" Content="back" Click="Back_Click" VerticalAlignment="Bottom" Margin="24,0,0,0" HorizontalAlignment="Left" Height="90" Width="163" FontSize="20"/>
+    </StackPanel>
 </Page>
