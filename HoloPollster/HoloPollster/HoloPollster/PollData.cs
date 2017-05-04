@@ -14,7 +14,7 @@ namespace HoloPollster
     public class PollData 
     {
         public string QuestionText { get; set; }
-        public enum AnswerType { Default = 0, TextBox = 0, RadioButton = 1 };
+        public enum AnswerType { Default = 0, TextBox = 0, RadioButton = 1 }; //This would allow for expansion to other types of questions in the future
         public AnswerType type;
        
 

@@ -10,19 +10,19 @@ using System.Xml.Schema;
 
 namespace HoloPollster
 {
-    [DataContract(Name="MetaPoll", Namespace = "holopollster")]
+    [DataContract(Name="MetaPoll", Namespace = "holopollster")] //Necessary to serialize and deserialize data when working with cloud
     public class PollsWithMetaData : IEnumerable<PollData>
     {
+        [DataMember()] //Necessary for serialziation
+        public List<PollData> questions { get; set; } //List of questions
         [DataMember()]
-        public List<PollData> questions { get; set; }
+        public string PollName { get; set; } //Name of poll
         [DataMember()]
-        public string PollName { get; set; }
+        public string PollCreator { get; set; } //Creator of poll
         [DataMember()]
-        public string PollCreator { get; set; }
-        [DataMember()]
-        public DateTime CreationTime { get; set; }
+        public DateTime CreationTime { get; set; } //Time poll was created
         void PollsWithMetadata()
-        {
+        { //Sets defaults when an instance is initialized
             this.questions = new List<PollData>();
             this.PollName = "DefaultName";
             PollCreator = "NoName";
@@ -30,7 +30,7 @@ namespace HoloPollster
                 
         }
 
-        public IEnumerator<PollData> GetEnumerator()
+        public IEnumerator<PollData> GetEnumerator() //These allow us to iterate through the questions
         {
             return questions.GetEnumerator();
         }
@@ -42,8 +42,8 @@ namespace HoloPollster
 
         public void Add(PollData p)
         {
-            p.QuestionText = "random text";
-            //questions.Add(p);
+            p.QuestionText = "random text"; //Sets default text when a polldata is added
+           
         }
 
     }

@@ -24,7 +24,7 @@ namespace HoloPollster.WinPhone
     public sealed partial class PickAPoll : Page
     {
         int rowIndex;
-        static public string picked;
+        static public string picked; //Allows us to track which poll was selected by user
         public PickAPoll()
         {
             rowIndex = 0;
@@ -32,36 +32,30 @@ namespace HoloPollster.WinPhone
 
 
             try {
-                foreach (PollsWithMetaData poll in MainPage.polls.CreatedPolls)
+                foreach (PollsWithMetaData poll in MainPage.polls.CreatedPolls) //Iterates through all polls created
                 {
-                    RowDefinition newRow = new RowDefinition();
+                    RowDefinition newRow = new RowDefinition(); //Adds a row for every poll created
                     rowIndex += 1;
                     newRow.Height = GridLength.Auto;
                     newRow.MinHeight = 30;
 
                     grid.RowDefinitions.Add(newRow);
-                    var MyButton = new Button();
-                    /* MyButton.Content = new TextBlock()
-                     {
-                         FontSize = 25,
-                         TextAlignment = TextAlignment.Center,
-                         TextWrapping = TextWrapping.Wrap,
-                         Text = "Name: " + poll.PollName + " Created By: " + poll.PollCreator+ " Created At: " + poll.CreationTime.ToString()
-                     };*/
+                    var MyButton = new Button(); //Each row contains a button displaying the name of one of the polls created
                     MyButton.Content = poll.PollName;
-                    MyButton.Click += navigation;
-                    Grid.SetRow(MyButton, rowIndex);
-                    grid.Children.Add(MyButton);
+                    MyButton.Click += navigation; //Subscribes to navigation event handler
+                    Grid.SetRow(MyButton, rowIndex); //adds new row
+                    grid.Children.Add(MyButton); //Adds button as child to new row
 
                 }
             }
-           catch {
+           catch { //Handles event wherein no polls have been created yet
+                //We need a try/catch because we can't just check for null. It crashes the app
                 var tex = new TextBlock();
                 tex.FontSize = 24;
                 tex.TextWrapping = TextWrapping.WrapWholeWords;
                 tex.HorizontalAlignment = HorizontalAlignment.Center;
-                tex.Text = "No Polls Created Yet!";
-                RowDefinition row = new RowDefinition();
+                tex.Text = "No Polls Created Yet!"; //Informs user that no polls have been created
+                RowDefinition row = new RowDefinition(); //Adds information to screen in form of new gridrow
                 grid.RowDefinitions.Add(row);
                 Grid.SetRow(tex, 1);
                 grid.Children.Add(tex);
@@ -73,7 +67,7 @@ namespace HoloPollster.WinPhone
 
 
         private void navigation(object sender, RoutedEventArgs e)
-        {
+        { //Event handler for taking the selected poll
 
             var selection = sender as Button;
             picked = selection.Content.ToString();
@@ -92,7 +86,7 @@ namespace HoloPollster.WinPhone
     }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
-        {
+        { //Event handler for navigating backwards
             MainPage.polls.CreatedPolls.Clear();
             this.Frame.Navigate(typeof(HomeScreen));
         }

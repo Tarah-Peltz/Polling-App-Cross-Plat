@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace HoloPollster
 {
-    [DataContract(Name = "Username", Namespace = "holopollster")]
+    [DataContract(Name = "Username", Namespace = "holopollster")] //Necessary to serialize data for cloud creation
     public class LoginData
     {
-        [DataMember()]
-        public string username { get; set; }
+        [DataMember()] //Necessary for serialization
+        public string username { get; set; } 
         [DataMember()]
         public string password { get; set; }
         [DataMember()]
@@ -19,22 +19,16 @@ namespace HoloPollster
         [DataMember()]
         public int pollsCreated { get; set; }
         public LoginData()
-        {
+        { //Sets defaults when a LoginData is created
             this.username = "default";
             this.password = "default";
             pollsCreated = 0;
             pollsTaken = 0;
         }
-        public string welcomeMessage
-        {
-            get
-            {
-                return $"Welcome { this.username}";
-            }
-        }
+
     }
 
-    public class LoginDataViewModel
+    public class LoginDataViewModel //Creates the viewmodel for binding the username to the welcome message on the homescreen
     {
         private LoginData defaultLogin = new LoginData();
         public LoginData Login { get { return this.defaultLogin; } }

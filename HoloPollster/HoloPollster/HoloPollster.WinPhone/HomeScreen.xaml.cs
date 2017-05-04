@@ -55,7 +55,7 @@ namespace HoloPollster.WinPhone
             //Oops. Accidentally named MakeAPage at first. This calls MakeAPoll, which is MakeAPage
         }
         private async void TakeAPoll_Click(object sender, RoutedEventArgs e)
-        {
+        { //Navigates to poll selection page
             await Cloud.RetrievePollFromCloud(MainPage.polls);
             this.Frame.Navigate(typeof(PickAPoll));
         }
@@ -71,7 +71,7 @@ namespace HoloPollster.WinPhone
         }
 
         private async void MyStats_Click_1(object sender, RoutedEventArgs e)
-        {
+        { //Navigates to stats page
             var result = await Cloud.UsernameRetrieveFromCloud(MainPage.userdata.username, MainPage.userdata); //gets latest data
             if (result == null) { }
             this.Frame.Navigate(typeof(Stats));

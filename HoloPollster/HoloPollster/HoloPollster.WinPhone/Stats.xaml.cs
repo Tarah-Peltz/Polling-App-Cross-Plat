@@ -24,6 +24,7 @@ namespace HoloPollster.WinPhone
     {
         public Stats()
         {
+            //Displays user data
             this.InitializeComponent();
             Statistics.Text = "Welcome, " + MainPage.userdata.username + ".";
             Statistics.TextWrapping = TextWrapping.WrapWholeWords;
@@ -43,7 +44,7 @@ namespace HoloPollster.WinPhone
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(HomeScreen));
+            this.Frame.Navigate(typeof(HomeScreen)); //Allows user to navigate backwards
         }
     }
 }

@@ -42,17 +42,17 @@ namespace HoloPollster.WinPhone
 
         private async void button_Click(object sender, RoutedEventArgs e)
         {
-            MainPage.userdata.pollsCreated += 1;
-            Cloud.UsernameUploadToCloudSerialized(MainPage.userdata);
+            MainPage.userdata.pollsCreated += 1; //Gives user credit for creating a poll
+            Cloud.UsernameUploadToCloudSerialized(MainPage.userdata); //uploads updated user data to cloud
             button.IsEnabled = false;
-            newPoll.questions = MakeAPoll.questions;
+            newPoll.questions = MakeAPoll.questions; //Initializes values of newpoll
             newPoll.PollCreator = MainPage.userdata.username;
             newPoll.CreationTime = DateTime.Now;
             newPoll.PollName = textbox.Text;
             //no longer needed since we pull all polls from the cloud
             //MainPage.polls.CreatedPolls.Add(newPoll);
-            await Cloud.UploadPollToCloudSerialized(newPoll);
-            this.Frame.Navigate(typeof(HomeScreen));
+            await Cloud.UploadPollToCloudSerialized(newPoll); //Uploads new poll to cloud
+            this.Frame.Navigate(typeof(HomeScreen)); //navigates home
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
