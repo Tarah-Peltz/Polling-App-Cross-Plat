@@ -45,15 +45,15 @@ namespace HoloPollster.WinPhone
         {
             RowDefinition newRow = new RowDefinition();
             RowDefinition newRow2 = new RowDefinition();
-            RowDefinition newRow3 = new RowDefinition();
-            rowIndex += 3;
-            newRow.Height = GridLength.Auto;
-            newRow.MinHeight = 30;
+            //RowDefinition newRow3 = new RowDefinition();
+            rowIndex += 2;
+            /*newRow.Height = GridLength.Auto;
+            newRow.MinHeight = 30;*/
             grid.RowDefinitions.Add(newRow);
             grid.RowDefinitions.Add(newRow2);
-            grid.RowDefinitions.Add(newRow3);
+            //grid.RowDefinitions.Add(newRow3);
             AdderSet.SetValue(Grid.RowProperty, rowIndex);
-            ToggleSwitch newBut = new ToggleSwitch();
+            //ToggleSwitch newBut = new ToggleSwitch();
             TextBox text = new TextBox();
             Button close = new Button();
             close.Height = 50;
@@ -64,15 +64,15 @@ namespace HoloPollster.WinPhone
             //close.Foreground.SetValue(SolidColorBrush.ColorProperty, Windows.UI.Colors.White);
             close.HorizontalAlignment = HorizontalAlignment.Right;
             close.VerticalAlignment = VerticalAlignment.Top;
-            newBut.OnContent = "TextBox";
-            newBut.OffContent = "Radio Buttons";
-            newBut.IsOn = true;
+            //newBut.OnContent = "TextBox";
+            //newBut.OffContent = "Radio Buttons";
+            //newBut.IsOn = true;
             text.Text = "Your Question Here";
-            Grid.SetRow(close, rowIndex - 3);
-            Grid.SetRow(newBut, rowIndex - 2);
+            Grid.SetRow(close, rowIndex - 2);
+            //Grid.SetRow(newBut, rowIndex - 2);
             Grid.SetRow(text, rowIndex - 1);
             grid.Children.Add(close);
-            grid.Children.Add(newBut);
+            //grid.Children.Add(newBut);
             grid.Children.Add(text);
 
 
@@ -81,11 +81,11 @@ namespace HoloPollster.WinPhone
         }
         void RemoveQuestion(object sender, RoutedEventArgs e)
         {
-            rowIndex -= 3;
+            rowIndex -= 2;
             var rm = sender as Button;
 
             int rmindex = (int)rm.GetValue(Grid.RowProperty);
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 foreach (UIElement control in grid.Children)
                 {
