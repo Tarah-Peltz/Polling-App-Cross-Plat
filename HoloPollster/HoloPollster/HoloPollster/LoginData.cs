@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace HoloPollster
 {
-    [DataContract(Name = "Username", Namespace = "holopollster")] //Necessary to serialize data for cloud creation
+    //Necessary to serialize data for cloud creation
+    [DataContract(Name = "Username", Namespace = "holopollster")] 
     public class LoginData
     {
         [DataMember()] //Necessary for serialization

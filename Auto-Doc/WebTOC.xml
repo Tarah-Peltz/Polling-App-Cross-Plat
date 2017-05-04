@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="e0cf918c-0790-4dfc-a1d0-5f22d47499d0" Title="HoloPollster Namespace" Url="html/N-HoloPollster.htm">
+    <HelpTOCNode Id="6395244f-fc04-48e6-9be6-457a7d4e0296" Title="AllPollsCreated Class" Url="html/T-HoloPollster.AllPollsCreated.htm">
+      <HelpTOCNode Title="AllPollsCreated Members" Url="html/AllMembers.T-HoloPollster.AllPollsCreated.htm" />
+      <HelpTOCNode Title="AllPollsCreated Constructor " Url="html/M-HoloPollster.AllPollsCreated.-ctor.htm" />
+      <HelpTOCNode Title="AllPollsCreated Methods" Url="html/Methods.T-HoloPollster.AllPollsCreated.htm" />
+      <HelpTOCNode Id="9802a722-8aa2-48db-9b5f-83b28600514d" Title="AllPollsCreated Properties" Url="html/Properties.T-HoloPollster.AllPollsCreated.htm">
+        <HelpTOCNode Title="CreatedPolls Property " Url="html/P-HoloPollster.AllPollsCreated.CreatedPolls.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="17e3527a-e5fb-4912-91dd-19eab5e583b7" Title="Cloud Class" Url="html/T-HoloPollster.Cloud.htm">
+      <HelpTOCNode Title="Cloud Members" Url="html/AllMembers.T-HoloPollster.Cloud.htm" />
+      <HelpTOCNode Title="Cloud Constructor " Url="html/M-HoloPollster.Cloud.-ctor.htm" />
+      <HelpTOCNode Id="0c07e9a0-e18a-481f-99d8-8d9fe4cc23dd" Title="Cloud Fields" Url="html/Fields.T-HoloPollster.Cloud.htm">
+        <HelpTOCNode Title="accountKey Field" Url="html/F-HoloPollster.Cloud.accountKey.htm" />
+        <HelpTOCNode Title="accountName Field" Url="html/F-HoloPollster.Cloud.accountName.htm" />
+        <HelpTOCNode Title="objSerializer Field" Url="html/F-HoloPollster.Cloud.objSerializer.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f179c254-8a42-4b2e-b566-5958f8a09e77" Title="Cloud Methods" Url="html/Methods.T-HoloPollster.Cloud.htm">
+        <HelpTOCNode Title="ListBlobsAsync Method " Url="html/M-HoloPollster.Cloud.ListBlobsAsync.htm" />
+        <HelpTOCNode Title="RetrievePollFromCloud Method " Url="html/M-HoloPollster.Cloud.RetrievePollFromCloud.htm" />
+        <HelpTOCNode Title="UploadPollToCloudSerialized Method " Url="html/M-HoloPollster.Cloud.UploadPollToCloudSerialized.htm" />
+        <HelpTOCNode Title="UsernameListBlobsAsync Method " Url="html/M-HoloPollster.Cloud.UsernameListBlobsAsync.htm" />
+        <HelpTOCNode Title="UsernameRetrieveFromCloud Method " Url="html/M-HoloPollster.Cloud.UsernameRetrieveFromCloud.htm" />
+        <HelpTOCNode Title="UsernameUploadToCloudSerialized Method " Url="html/M-HoloPollster.Cloud.UsernameUploadToCloudSerialized.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2005029e-3e72-40d7-95ee-1e60ac5a9446" Title="LoginData Class" Url="html/T-HoloPollster.LoginData.htm">
+      <HelpTOCNode Title="LoginData Members" Url="html/AllMembers.T-HoloPollster.LoginData.htm" />
+      <HelpTOCNode Title="LoginData Constructor " Url="html/M-HoloPollster.LoginData.-ctor.htm" />
+      <HelpTOCNode Title="LoginData Methods" Url="html/Methods.T-HoloPollster.LoginData.htm" />
+      <HelpTOCNode Id="1cde2801-5ff5-44c3-a816-f9dc15b36ecd" Title="LoginData Properties" Url="html/Properties.T-HoloPollster.LoginData.htm">
+        <HelpTOCNode Title="password Property " Url="html/P-HoloPollster.LoginData.password.htm" />
+        <HelpTOCNode Title="pollsCreated Property " Url="html/P-HoloPollster.LoginData.pollsCreated.htm" />
+        <HelpTOCNode Title="pollsTaken Property " Url="html/P-HoloPollster.LoginData.pollsTaken.htm" />
+        <HelpTOCNode Title="username Property " Url="html/P-HoloPollster.LoginData.username.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d09e83a1-35ab-4efd-aa4a-d9527c8ce953" Title="LoginDataViewModel Class" Url="html/T-HoloPollster.LoginDataViewModel.htm">
+      <HelpTOCNode Title="LoginDataViewModel Members" Url="html/AllMembers.T-HoloPollster.LoginDataViewModel.htm" />
+      <HelpTOCNode Id="39b3f04c-e7da-4ead-99e3-80574a7ac3d5" Title="LoginDataViewModel Fields" Url="html/Fields.T-HoloPollster.LoginDataViewModel.htm">
+        <HelpTOCNode Title="defaultLogin Field" Url="html/F-HoloPollster.LoginDataViewModel.defaultLogin.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="LoginDataViewModel Methods" Url="html/Methods.T-HoloPollster.LoginDataViewModel.htm" />
+      <HelpTOCNode Id="13417221-9938-4ea4-9b30-78ed95650186" Title="LoginDataViewModel Properties" Url="html/Properties.T-HoloPollster.LoginDataViewModel.htm">
+        <HelpTOCNode Title="Login Property " Url="html/P-HoloPollster.LoginDataViewModel.Login.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="14f993dd-afce-4227-8005-1f0397de833d" Title="PollData Class" Url="html/T-HoloPollster.PollData.htm">
+      <HelpTOCNode Title="PollData Members" Url="html/AllMembers.T-HoloPollster.PollData.htm" />
+      <HelpTOCNode Title="PollData Constructor " Url="html/M-HoloPollster.PollData.-ctor.htm" />
+      <HelpTOCNode Id="d6bf15bf-562c-4ebc-9eb4-c66c6de73af7" Title="PollData Fields" Url="html/Fields.T-HoloPollster.PollData.htm">
+        <HelpTOCNode Title="type Field" Url="html/F-HoloPollster.PollData.type.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PollData Methods" Url="html/Methods.T-HoloPollster.PollData.htm" />
+      <HelpTOCNode Id="7f4eb1e1-8143-49dc-b267-92bc978f4172" Title="PollData Properties" Url="html/Properties.T-HoloPollster.PollData.htm">
+        <HelpTOCNode Title="QuestionText Property " Url="html/P-HoloPollster.PollData.QuestionText.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="PollData.AnswerType Enumeration" Url="html/T-HoloPollster.PollData.AnswerType.htm" />
+    <HelpTOCNode Id="716c7fe3-8813-4281-a32f-376d00adf9bc" Title="PollsWithMetaData Class" Url="html/T-HoloPollster.PollsWithMetaData.htm">
+      <HelpTOCNode Title="PollsWithMetaData Members" Url="html/AllMembers.T-HoloPollster.PollsWithMetaData.htm" />
+      <HelpTOCNode Id="84ac83c1-8ed2-4e13-8ea1-56f9c3ce00c3" Title="PollsWithMetaData Methods" Url="html/Methods.T-HoloPollster.PollsWithMetaData.htm">
+        <HelpTOCNode Title="Add Method " Url="html/M-HoloPollster.PollsWithMetaData.Add.htm" />
+        <HelpTOCNode Title="PollsWithMetadata Method " Url="html/M-HoloPollster.PollsWithMetaData.PollsWithMetadata.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="55ab7f68-cf74-40f5-9a6e-ab2229a6362a" Title="PollsWithMetaData Properties" Url="html/Properties.T-HoloPollster.PollsWithMetaData.htm">
+        <HelpTOCNode Title="CreationTime Property " Url="html/P-HoloPollster.PollsWithMetaData.CreationTime.htm" />
+        <HelpTOCNode Title="PollCreator Property " Url="html/P-HoloPollster.PollsWithMetaData.PollCreator.htm" />
+        <HelpTOCNode Title="PollName Property " Url="html/P-HoloPollster.PollsWithMetaData.PollName.htm" />
+        <HelpTOCNode Title="questions Property " Url="html/P-HoloPollster.PollsWithMetaData.questions.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="6f9bc32b-bfec-4fc1-91b8-26bc55dcc154" Title="HoloPollster.WinPhone Namespace" Url="html/N-HoloPollster.WinPhone.htm">
+    <HelpTOCNode Id="4da6b90a-031e-4892-bfd1-12ee81f61b90" Title="App Class" Url="html/T-HoloPollster.WinPhone.App.htm">
+      <HelpTOCNode Title="App Members" Url="html/AllMembers.T-HoloPollster.WinPhone.App.htm" />
+      <HelpTOCNode Title="App Constructor " Url="html/M-HoloPollster.WinPhone.App.-ctor.htm" />
+      <HelpTOCNode Id="d2b82d8e-40b2-4403-9f56-6586a561f11e" Title="App Fields" Url="html/Fields.T-HoloPollster.WinPhone.App.htm">
+        <HelpTOCNode Title="transitions Field" Url="html/F-HoloPollster.WinPhone.App.transitions.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="052780d2-4507-48e6-bf95-e164552c60e0" Title="App Methods" Url="html/Methods.T-HoloPollster.WinPhone.App.htm">
+        <HelpTOCNode Id="92551371-2480-4015-bbc4-92fde515abbb" Title="OnLaunched Method " Url="html/Overload-HoloPollster.WinPhone.App.OnLaunched.htm">
+          <HelpTOCNode Title="OnLaunched Method " Url="html/M-HoloPollster.WinPhone.App.OnLaunched.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="OnSuspending Method " Url="html/M-HoloPollster.WinPhone.App.OnSuspending.htm" />
+        <HelpTOCNode Title="RootFrame_FirstNavigated Method " Url="html/M-HoloPollster.WinPhone.App.RootFrame_FirstNavigated.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="App Properties" Url="html/Properties.T-HoloPollster.WinPhone.App.htm" />
+      <HelpTOCNode Title="App Events" Url="html/Events.T-HoloPollster.WinPhone.App.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="fb0f2cf1-2f85-4be5-89a1-7cb7f24c3158" Title="HomeScreen Class" Url="html/T-HoloPollster.WinPhone.HomeScreen.htm">
+      <HelpTOCNode Title="HomeScreen Members" Url="html/AllMembers.T-HoloPollster.WinPhone.HomeScreen.htm" />
+      <HelpTOCNode Title="HomeScreen Constructor " Url="html/M-HoloPollster.WinPhone.HomeScreen.-ctor.htm" />
+      <HelpTOCNode Id="bb63ba5e-c75e-466e-b6f8-d5d42b6f8ecd" Title="HomeScreen Fields" Url="html/Fields.T-HoloPollster.WinPhone.HomeScreen.htm">
+        <HelpTOCNode Title="cloud Field" Url="html/F-HoloPollster.WinPhone.HomeScreen.cloud.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2449670e-fb35-48a2-8f9a-6ea91405c337" Title="HomeScreen Methods" Url="html/Methods.T-HoloPollster.WinPhone.HomeScreen.htm">
+        <HelpTOCNode Title="block_SelectionChanged Method " Url="html/M-HoloPollster.WinPhone.HomeScreen.block_SelectionChanged.htm" />
+        <HelpTOCNode Title="MakeAPoll_Click Method " Url="html/M-HoloPollster.WinPhone.HomeScreen.MakeAPoll_Click.htm" />
+        <HelpTOCNode Title="MyStats_Click Method " Url="html/M-HoloPollster.WinPhone.HomeScreen.MyStats_Click.htm" />
+        <HelpTOCNode Title="MyStats_Click_1 Method " Url="html/M-HoloPollster.WinPhone.HomeScreen.MyStats_Click_1.htm" />
+        <HelpTOCNode Id="1659abbb-595d-4072-a8e8-a4d89e5e5345" Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.HomeScreen.OnNavigatedTo.htm">
+          <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.HomeScreen.OnNavigatedTo.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="TakeAPoll_Click Method " Url="html/M-HoloPollster.WinPhone.HomeScreen.TakeAPoll_Click.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2a412747-08df-43b0-988b-ccbe4c58e10d" Title="HomeScreen Properties" Url="html/Properties.T-HoloPollster.WinPhone.HomeScreen.htm">
+        <HelpTOCNode Title="ViewModel Property " Url="html/P-HoloPollster.WinPhone.HomeScreen.ViewModel.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="HomeScreen Events" Url="html/Events.T-HoloPollster.WinPhone.HomeScreen.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="97f12770-eb36-41a2-a125-fadf189e5101" Title="MainPage Class" Url="html/T-HoloPollster.WinPhone.MainPage.htm">
+      <HelpTOCNode Title="MainPage Members" Url="html/AllMembers.T-HoloPollster.WinPhone.MainPage.htm" />
+      <HelpTOCNode Title="MainPage Constructor " Url="html/M-HoloPollster.WinPhone.MainPage.-ctor.htm" />
+      <HelpTOCNode Id="ce2a57f6-fb61-4346-8dab-5b7888d49bab" Title="MainPage Fields" Url="html/Fields.T-HoloPollster.WinPhone.MainPage.htm">
+        <HelpTOCNode Title="cloud Field" Url="html/F-HoloPollster.WinPhone.MainPage.cloud.htm" />
+        <HelpTOCNode Title="Password Field" Url="html/F-HoloPollster.WinPhone.MainPage.Password.htm" />
+        <HelpTOCNode Title="polls Field" Url="html/F-HoloPollster.WinPhone.MainPage.polls.htm" />
+        <HelpTOCNode Title="userdata Field" Url="html/F-HoloPollster.WinPhone.MainPage.userdata.htm" />
+        <HelpTOCNode Title="Username Field" Url="html/F-HoloPollster.WinPhone.MainPage.Username.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7978ea0f-2e54-4ce5-bb98-e8edc3741259" Title="MainPage Methods" Url="html/Methods.T-HoloPollster.WinPhone.MainPage.htm">
+        <HelpTOCNode Title="Button_Click Method " Url="html/M-HoloPollster.WinPhone.MainPage.Button_Click.htm" />
+        <HelpTOCNode Title="Button_Click_1 Method " Url="html/M-HoloPollster.WinPhone.MainPage.Button_Click_1.htm" />
+        <HelpTOCNode Title="ClosePopUp_Click Method " Url="html/M-HoloPollster.WinPhone.MainPage.ClosePopUp_Click.htm" />
+        <HelpTOCNode Title="Createpassword_PasswordChanged Method " Url="html/M-HoloPollster.WinPhone.MainPage.Createpassword_PasswordChanged.htm" />
+        <HelpTOCNode Title="Createpassword2_PasswordChanged Method " Url="html/M-HoloPollster.WinPhone.MainPage.Createpassword2_PasswordChanged.htm" />
+        <HelpTOCNode Title="Createusername_TextChanged Method " Url="html/M-HoloPollster.WinPhone.MainPage.Createusername_TextChanged.htm" />
+        <HelpTOCNode Title="newUser_Tapped Method " Url="html/M-HoloPollster.WinPhone.MainPage.newUser_Tapped.htm" />
+        <HelpTOCNode Id="8ae86f20-111c-4324-a9e5-0a826d3cd253" Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.MainPage.OnNavigatedTo.htm">
+          <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.MainPage.OnNavigatedTo.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="password_PasswordChanged Method " Url="html/M-HoloPollster.WinPhone.MainPage.password_PasswordChanged.htm" />
+        <HelpTOCNode Title="username_TextChanged Method " Url="html/M-HoloPollster.WinPhone.MainPage.username_TextChanged.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainPage Properties" Url="html/Properties.T-HoloPollster.WinPhone.MainPage.htm" />
+      <HelpTOCNode Title="MainPage Events" Url="html/Events.T-HoloPollster.WinPhone.MainPage.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b1a1851c-5821-463d-81aa-14b00c60cf09" Title="MakeAPoll Class" Url="html/T-HoloPollster.WinPhone.MakeAPoll.htm">
+      <HelpTOCNode Title="MakeAPoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.MakeAPoll.htm" />
+      <HelpTOCNode Title="MakeAPoll Constructor " Url="html/M-HoloPollster.WinPhone.MakeAPoll.-ctor.htm" />
+      <HelpTOCNode Id="a287f5e3-9344-4633-b805-87a7ff3e6eb2" Title="MakeAPoll Fields" Url="html/Fields.T-HoloPollster.WinPhone.MakeAPoll.htm">
+        <HelpTOCNode Title="questions Field" Url="html/F-HoloPollster.WinPhone.MakeAPoll.questions.htm" />
+        <HelpTOCNode Title="rowIndex Field" Url="html/F-HoloPollster.WinPhone.MakeAPoll.rowIndex.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3edf98e0-6733-4dbb-b8fa-05d8b44b1547" Title="MakeAPoll Methods" Url="html/Methods.T-HoloPollster.WinPhone.MakeAPoll.htm">
+        <HelpTOCNode Title="AddQuestion Method " Url="html/M-HoloPollster.WinPhone.MakeAPoll.AddQuestion.htm" />
+        <HelpTOCNode Title="Button_Click Method " Url="html/M-HoloPollster.WinPhone.MakeAPoll.Button_Click.htm" />
+        <HelpTOCNode Title="FinalizePoll Method " Url="html/M-HoloPollster.WinPhone.MakeAPoll.FinalizePoll.htm" />
+        <HelpTOCNode Title="FindVisualChildren(T) Method " Url="html/M-HoloPollster.WinPhone.MakeAPoll.FindVisualChildren--1.htm" />
+        <HelpTOCNode Id="e7e1d1d0-b7ed-4bc4-96c5-a33c44fced92" Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.MakeAPoll.OnNavigatedTo.htm">
+          <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.MakeAPoll.OnNavigatedTo.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="RemoveQuestion Method " Url="html/M-HoloPollster.WinPhone.MakeAPoll.RemoveQuestion.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MakeAPoll Properties" Url="html/Properties.T-HoloPollster.WinPhone.MakeAPoll.htm" />
+      <HelpTOCNode Title="MakeAPoll Events" Url="html/Events.T-HoloPollster.WinPhone.MakeAPoll.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="170dc8c6-7ea0-4262-9b55-15b9b7d4833c" Title="NamePoll Class" Url="html/T-HoloPollster.WinPhone.NamePoll.htm">
+      <HelpTOCNode Title="NamePoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.NamePoll.htm" />
+      <HelpTOCNode Title="NamePoll Constructor " Url="html/M-HoloPollster.WinPhone.NamePoll.-ctor.htm" />
+      <HelpTOCNode Id="bb5a6c26-e7d9-4eed-9923-57b5bd5206ff" Title="NamePoll Fields" Url="html/Fields.T-HoloPollster.WinPhone.NamePoll.htm">
+        <HelpTOCNode Title="cloud Field" Url="html/F-HoloPollster.WinPhone.NamePoll.cloud.htm" />
+        <HelpTOCNode Title="newPoll Field" Url="html/F-HoloPollster.WinPhone.NamePoll.newPoll.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="72f1027b-1886-4e9b-8e0e-c5d6cf1c017e" Title="NamePoll Methods" Url="html/Methods.T-HoloPollster.WinPhone.NamePoll.htm">
+        <HelpTOCNode Title="button_Click Method " Url="html/M-HoloPollster.WinPhone.NamePoll.button_Click.htm" />
+        <HelpTOCNode Title="Cancel_Click Method " Url="html/M-HoloPollster.WinPhone.NamePoll.Cancel_Click.htm" />
+        <HelpTOCNode Id="ee10c2e0-935e-4536-ace3-06c6bc130cd3" Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.NamePoll.OnNavigatedTo.htm">
+          <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.NamePoll.OnNavigatedTo.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="NamePoll Properties" Url="html/Properties.T-HoloPollster.WinPhone.NamePoll.htm" />
+      <HelpTOCNode Title="NamePoll Events" Url="html/Events.T-HoloPollster.WinPhone.NamePoll.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="9d4eeacc-eff1-443e-8e13-9dfcbd1cf252" Title="PickAPoll Class" Url="html/T-HoloPollster.WinPhone.PickAPoll.htm">
+      <HelpTOCNode Title="PickAPoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.PickAPoll.htm" />
+      <HelpTOCNode Title="PickAPoll Constructor " Url="html/M-HoloPollster.WinPhone.PickAPoll.-ctor.htm" />
+      <HelpTOCNode Id="c6bc835f-281b-4a1c-93de-ae0684febbe3" Title="PickAPoll Fields" Url="html/Fields.T-HoloPollster.WinPhone.PickAPoll.htm">
+        <HelpTOCNode Title="picked Field" Url="html/F-HoloPollster.WinPhone.PickAPoll.picked.htm" />
+        <HelpTOCNode Title="rowIndex Field" Url="html/F-HoloPollster.WinPhone.PickAPoll.rowIndex.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b768e447-a000-44f6-9446-c610c52a458f" Title="PickAPoll Methods" Url="html/Methods.T-HoloPollster.WinPhone.PickAPoll.htm">
+        <HelpTOCNode Title="Cancel_Click Method " Url="html/M-HoloPollster.WinPhone.PickAPoll.Cancel_Click.htm" />
+        <HelpTOCNode Title="navigation Method " Url="html/M-HoloPollster.WinPhone.PickAPoll.navigation.htm" />
+        <HelpTOCNode Id="a5b608a1-39dc-45ea-8586-9ac5d922a4bd" Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.PickAPoll.OnNavigatedTo.htm">
+          <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.PickAPoll.OnNavigatedTo.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="PickAPoll Properties" Url="html/Properties.T-HoloPollster.WinPhone.PickAPoll.htm" />
+      <HelpTOCNode Title="PickAPoll Events" Url="html/Events.T-HoloPollster.WinPhone.PickAPoll.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="fd9a647e-a753-40c4-b25e-be0959a65bfe" Title="Stats Class" Url="html/T-HoloPollster.WinPhone.Stats.htm">
+      <HelpTOCNode Title="Stats Members" Url="html/AllMembers.T-HoloPollster.WinPhone.Stats.htm" />
+      <HelpTOCNode Title="Stats Constructor " Url="html/M-HoloPollster.WinPhone.Stats.-ctor.htm" />
+      <HelpTOCNode Id="6546e623-d78d-4855-8dac-a6b390b614a1" Title="Stats Methods" Url="html/Methods.T-HoloPollster.WinPhone.Stats.htm">
+        <HelpTOCNode Title="Back_Click Method " Url="html/M-HoloPollster.WinPhone.Stats.Back_Click.htm" />
+        <HelpTOCNode Id="79671a12-e83c-454e-a166-440f3f9d9b1e" Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.Stats.OnNavigatedTo.htm">
+          <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.Stats.OnNavigatedTo.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="Stats Properties" Url="html/Properties.T-HoloPollster.WinPhone.Stats.htm" />
+      <HelpTOCNode Title="Stats Events" Url="html/Events.T-HoloPollster.WinPhone.Stats.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="2de361d8-9c82-4420-84d5-2598dcc7b0e6" Title="TakeAPoll Class" Url="html/T-HoloPollster.WinPhone.TakeAPoll.htm">
+      <HelpTOCNode Title="TakeAPoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.TakeAPoll.htm" />
+      <HelpTOCNode Title="TakeAPoll Constructor " Url="html/M-HoloPollster.WinPhone.TakeAPoll.-ctor.htm" />
+      <HelpTOCNode Id="d32d9b58-32e3-4949-bc00-4dd20af39367" Title="TakeAPoll Fields" Url="html/Fields.T-HoloPollster.WinPhone.TakeAPoll.htm">
+        <HelpTOCNode Title="pickedPoll Field" Url="html/F-HoloPollster.WinPhone.TakeAPoll.pickedPoll.htm" />
+        <HelpTOCNode Title="rowIndex Field" Url="html/F-HoloPollster.WinPhone.TakeAPoll.rowIndex.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6bdb9cff-14e6-4817-aa46-13752468ef74" Title="TakeAPoll Methods" Url="html/Methods.T-HoloPollster.WinPhone.TakeAPoll.htm">
+        <HelpTOCNode Title="GoBack Method " Url="html/M-HoloPollster.WinPhone.TakeAPoll.GoBack.htm" />
+        <HelpTOCNode Id="d063e2ab-aeff-48f9-b920-49528663e435" Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.TakeAPoll.OnNavigatedTo.htm">
+          <HelpTOCNode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.TakeAPoll.OnNavigatedTo.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="submitPoll Method " Url="html/M-HoloPollster.WinPhone.TakeAPoll.submitPoll.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TakeAPoll Properties" Url="html/Properties.T-HoloPollster.WinPhone.TakeAPoll.htm" />
+      <HelpTOCNode Title="TakeAPoll Events" Url="html/Events.T-HoloPollster.WinPhone.TakeAPoll.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

@@ -17,15 +17,26 @@ using Windows.UI.Xaml.Navigation;
 
 namespace HoloPollster.WinPhone
 {
-    
+
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// <seealso cref="Windows.UI.Xaml.Controls.Page" />
+    /// <seealso cref="Windows.UI.Xaml.Markup.IComponentConnector" />
     public sealed partial class TakeAPoll : Page
     {
 
+        /// <summary>
+        /// The row index
+        /// </summary>
         int rowIndex;
+        /// <summary>
+        /// The picked poll
+        /// </summary>
         PollsWithMetaData pickedPoll;
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TakeAPoll"/> class.
+        /// </summary>
         public TakeAPoll()
         {
             this.InitializeComponent();
@@ -75,6 +86,11 @@ namespace HoloPollster.WinPhone
             grid.Children.Add(buttons); //Make stackpanel child of the new row
         }
 
+        /// <summary>
+        /// Submits the poll.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private async void submitPoll(object sender, RoutedEventArgs e)
         { //Event handler forsubmitting a poll
             MainPage.polls.CreatedPolls.Clear();
@@ -85,6 +101,11 @@ namespace HoloPollster.WinPhone
         }
 
 
+        /// <summary>
+        /// Goes the back.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void GoBack(object sender, RoutedEventArgs e)
         { //Event handler for navigating backwards
             this.Frame.Navigate(typeof(PickAPoll)); //Navigates back a page

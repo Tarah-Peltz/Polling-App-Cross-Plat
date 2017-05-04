@@ -20,8 +20,13 @@ namespace HoloPollster.WinPhone
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    /// <seealso cref="Windows.UI.Xaml.Controls.Page" />
+    /// <seealso cref="Windows.UI.Xaml.Markup.IComponentConnector" />
     public sealed partial class Stats : Page
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Stats"/> class.
+        /// </summary>
         public Stats()
         {
             //Displays user data
@@ -42,6 +47,11 @@ namespace HoloPollster.WinPhone
         {
         }
 
+        /// <summary>
+        /// Handles the Click event of the Back control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(HomeScreen)); //Allows user to navigate backwards

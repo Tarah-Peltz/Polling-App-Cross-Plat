@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : HoloPollster.WinPhone
+// Author           : 
+// Created          : 05-04-2017
+//
+// Last Modified By : 
+// Last Modified On : 05-04-2017
+// ***********************************************************************
+// <copyright file="App.xaml.cs" company="">
+//     Copyright ©  2015
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -23,8 +36,14 @@ namespace HoloPollster.WinPhone
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
+    /// <seealso cref="Windows.UI.Xaml.Application" />
+    /// <seealso cref="Windows.UI.Xaml.Markup.IXamlMetadataProvider" />
+    /// <seealso cref="Windows.UI.Xaml.Markup.IComponentConnector" />
     public sealed partial class App : Application
     {
+        /// <summary>
+        /// The transitions
+        /// </summary>
         private TransitionCollection transitions;
 
         /// <summary>
@@ -43,6 +62,7 @@ namespace HoloPollster.WinPhone
         /// search results, and so forth.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
+        /// <exception cref="System.Exception">Failed to create initial page</exception>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG

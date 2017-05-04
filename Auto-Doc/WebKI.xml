@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="accountKey field" Url="html/F-HoloPollster.Cloud.accountKey.htm" />
+  <HelpKINode Title="accountName field" Url="html/F-HoloPollster.Cloud.accountName.htm" />
+  <HelpKINode Title="Add method" Url="html/M-HoloPollster.PollsWithMetaData.Add.htm" />
+  <HelpKINode Title="AddQuestion method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.AddQuestion.htm" />
+  <HelpKINode Title="AllPollsCreated class">
+    <HelpKINode Title="AllPollsCreated Class" Url="html/T-HoloPollster.AllPollsCreated.htm" />
+    <HelpKINode Title="AllPollsCreated Members" Url="html/AllMembers.T-HoloPollster.AllPollsCreated.htm" />
+    <HelpKINode Title="about AllPollsCreated class" Url="html/T-HoloPollster.AllPollsCreated.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.AllPollsCreated.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.AllPollsCreated.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.AllPollsCreated.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.AllPollsCreated.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AllPollsCreated.AllPollsCreated constructor" Url="html/M-HoloPollster.AllPollsCreated.-ctor.htm" />
+  <HelpKINode Title="AllPollsCreated.CreatedPolls property" Url="html/P-HoloPollster.AllPollsCreated.CreatedPolls.htm" />
+  <HelpKINode Title="AllPollsCreated.GetEnumerator method">
+    <HelpKINode Title="GetEnumerator Method " Url="html/M-HoloPollster.AllPollsCreated.System-Collections-IEnumerable-GetEnumerator.htm" />
+    <HelpKINode Title="GetEnumerator Method " Url="html/M-HoloPollster.AllPollsCreated.GetEnumerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AnswerType.Default field" Url="html/F-HoloPollster.PollData.AnswerType.Default.htm" />
+  <HelpKINode Title="AnswerType.RadioButton field" Url="html/F-HoloPollster.PollData.AnswerType.RadioButton.htm" />
+  <HelpKINode Title="AnswerType.TextBox field" Url="html/F-HoloPollster.PollData.AnswerType.TextBox.htm" />
+  <HelpKINode Title="App class">
+    <HelpKINode Title="App Class" Url="html/T-HoloPollster.WinPhone.App.htm" />
+    <HelpKINode Title="App Members" Url="html/AllMembers.T-HoloPollster.WinPhone.App.htm" />
+    <HelpKINode Title="about App class" Url="html/T-HoloPollster.WinPhone.App.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.WinPhone.App.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.WinPhone.App.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-HoloPollster.WinPhone.App.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-HoloPollster.WinPhone.App.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.WinPhone.App.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.WinPhone.App.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.App constructor" Url="html/M-HoloPollster.WinPhone.App.-ctor.htm" />
+  <HelpKINode Title="App.OnLaunched method">
+    <HelpKINode Title="OnLaunched Method " Url="html/M-HoloPollster.WinPhone.App.OnLaunched.htm" />
+    <HelpKINode Title="OnLaunched Method " Url="html/Overload-HoloPollster.WinPhone.App.OnLaunched.htm" />
+  </HelpKINode>
+  <HelpKINode Title="App.OnSuspending method" Url="html/M-HoloPollster.WinPhone.App.OnSuspending.htm" />
+  <HelpKINode Title="App.RootFrame_FirstNavigated method" Url="html/M-HoloPollster.WinPhone.App.RootFrame_FirstNavigated.htm" />
+  <HelpKINode Title="App.transitions field" Url="html/F-HoloPollster.WinPhone.App.transitions.htm" />
+  <HelpKINode Title="Back_Click method" Url="html/M-HoloPollster.WinPhone.Stats.Back_Click.htm" />
+  <HelpKINode Title="block_SelectionChanged method" Url="html/M-HoloPollster.WinPhone.HomeScreen.block_SelectionChanged.htm" />
+  <HelpKINode Title="Button_Click method">
+    <HelpKINode Title="Button_Click Method " Url="html/M-HoloPollster.WinPhone.MainPage.Button_Click.htm" />
+    <HelpKINode Title="Button_Click Method " Url="html/M-HoloPollster.WinPhone.MakeAPoll.Button_Click.htm" />
+  </HelpKINode>
+  <HelpKINode Title="button_Click method" Url="html/M-HoloPollster.WinPhone.NamePoll.button_Click.htm" />
+  <HelpKINode Title="Button_Click_1 method" Url="html/M-HoloPollster.WinPhone.MainPage.Button_Click_1.htm" />
+  <HelpKINode Title="Cancel_Click method">
+    <HelpKINode Title="Cancel_Click Method " Url="html/M-HoloPollster.WinPhone.PickAPoll.Cancel_Click.htm" />
+    <HelpKINode Title="Cancel_Click Method " Url="html/M-HoloPollster.WinPhone.NamePoll.Cancel_Click.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ClosePopUp_Click method" Url="html/M-HoloPollster.WinPhone.MainPage.ClosePopUp_Click.htm" />
+  <HelpKINode Title="Cloud class">
+    <HelpKINode Title="Cloud Class" Url="html/T-HoloPollster.Cloud.htm" />
+    <HelpKINode Title="Cloud Members" Url="html/AllMembers.T-HoloPollster.Cloud.htm" />
+    <HelpKINode Title="about Cloud class" Url="html/T-HoloPollster.Cloud.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.Cloud.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.Cloud.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-HoloPollster.Cloud.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.Cloud.htm" />
+  </HelpKINode>
+  <HelpKINode Title="cloud field">
+    <HelpKINode Title="cloud Field" Url="html/F-HoloPollster.WinPhone.HomeScreen.cloud.htm" />
+    <HelpKINode Title="cloud Field" Url="html/F-HoloPollster.WinPhone.MainPage.cloud.htm" />
+    <HelpKINode Title="cloud Field" Url="html/F-HoloPollster.WinPhone.NamePoll.cloud.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Cloud.accountKey field" Url="html/F-HoloPollster.Cloud.accountKey.htm" />
+  <HelpKINode Title="Cloud.accountName field" Url="html/F-HoloPollster.Cloud.accountName.htm" />
+  <HelpKINode Title="Cloud.Cloud constructor" Url="html/M-HoloPollster.Cloud.-ctor.htm" />
+  <HelpKINode Title="Cloud.ListBlobsAsync method" Url="html/M-HoloPollster.Cloud.ListBlobsAsync.htm" />
+  <HelpKINode Title="Cloud.objSerializer field" Url="html/F-HoloPollster.Cloud.objSerializer.htm" />
+  <HelpKINode Title="Cloud.RetrievePollFromCloud method" Url="html/M-HoloPollster.Cloud.RetrievePollFromCloud.htm" />
+  <HelpKINode Title="Cloud.UploadPollToCloudSerialized method" Url="html/M-HoloPollster.Cloud.UploadPollToCloudSerialized.htm" />
+  <HelpKINode Title="Cloud.UsernameListBlobsAsync method" Url="html/M-HoloPollster.Cloud.UsernameListBlobsAsync.htm" />
+  <HelpKINode Title="Cloud.UsernameRetrieveFromCloud method" Url="html/M-HoloPollster.Cloud.UsernameRetrieveFromCloud.htm" />
+  <HelpKINode Title="Cloud.UsernameUploadToCloudSerialized method" Url="html/M-HoloPollster.Cloud.UsernameUploadToCloudSerialized.htm" />
+  <HelpKINode Title="CreatedPolls property" Url="html/P-HoloPollster.AllPollsCreated.CreatedPolls.htm" />
+  <HelpKINode Title="Createpassword2_PasswordChanged method" Url="html/M-HoloPollster.WinPhone.MainPage.Createpassword2_PasswordChanged.htm" />
+  <HelpKINode Title="Createpassword_PasswordChanged method" Url="html/M-HoloPollster.WinPhone.MainPage.Createpassword_PasswordChanged.htm" />
+  <HelpKINode Title="Createusername_TextChanged method" Url="html/M-HoloPollster.WinPhone.MainPage.Createusername_TextChanged.htm" />
+  <HelpKINode Title="CreationTime property" Url="html/P-HoloPollster.PollsWithMetaData.CreationTime.htm" />
+  <HelpKINode Title="Default enumeration member" Url="html/T-HoloPollster.PollData.AnswerType.htm" />
+  <HelpKINode Title="Default field" Url="html/F-HoloPollster.PollData.AnswerType.Default.htm" />
+  <HelpKINode Title="defaultLogin field" Url="html/F-HoloPollster.LoginDataViewModel.defaultLogin.htm" />
+  <HelpKINode Title="FinalizePoll method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.FinalizePoll.htm" />
+  <HelpKINode Title="FindVisualChildren(Of T) method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.FindVisualChildren--1.htm" />
+  <HelpKINode Title="FindVisualChildren&lt;T&gt; method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.FindVisualChildren--1.htm" />
+  <HelpKINode Title="GetEnumerator method">
+    <HelpKINode Title="GetEnumerator Method " Url="html/M-HoloPollster.AllPollsCreated.GetEnumerator.htm" />
+    <HelpKINode Title="GetEnumerator Method " Url="html/M-HoloPollster.PollsWithMetaData.GetEnumerator.htm" />
+    <HelpKINode Title="GetEnumerator Method " Url="html/M-HoloPollster.PollsWithMetaData.System-Collections-IEnumerable-GetEnumerator.htm" />
+    <HelpKINode Title="GetEnumerator Method " Url="html/M-HoloPollster.AllPollsCreated.System-Collections-IEnumerable-GetEnumerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GoBack method" Url="html/M-HoloPollster.WinPhone.TakeAPoll.GoBack.htm" />
+  <HelpKINode Title="HoloPollster namespace" Url="html/N-HoloPollster.htm" />
+  <HelpKINode Title="HoloPollster.AllPollsCreated class">
+    <HelpKINode Title="AllPollsCreated Class" Url="html/T-HoloPollster.AllPollsCreated.htm" />
+    <HelpKINode Title="AllPollsCreated Members" Url="html/AllMembers.T-HoloPollster.AllPollsCreated.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.Cloud class">
+    <HelpKINode Title="Cloud Class" Url="html/T-HoloPollster.Cloud.htm" />
+    <HelpKINode Title="Cloud Members" Url="html/AllMembers.T-HoloPollster.Cloud.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.LoginData class">
+    <HelpKINode Title="LoginData Class" Url="html/T-HoloPollster.LoginData.htm" />
+    <HelpKINode Title="LoginData Members" Url="html/AllMembers.T-HoloPollster.LoginData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.LoginDataViewModel class">
+    <HelpKINode Title="LoginDataViewModel Class" Url="html/T-HoloPollster.LoginDataViewModel.htm" />
+    <HelpKINode Title="LoginDataViewModel Members" Url="html/AllMembers.T-HoloPollster.LoginDataViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.PollData class">
+    <HelpKINode Title="PollData Class" Url="html/T-HoloPollster.PollData.htm" />
+    <HelpKINode Title="PollData Members" Url="html/AllMembers.T-HoloPollster.PollData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.PollData.AnswerType enumeration" Url="html/T-HoloPollster.PollData.AnswerType.htm" />
+  <HelpKINode Title="HoloPollster.PollsWithMetaData class">
+    <HelpKINode Title="PollsWithMetaData Class" Url="html/T-HoloPollster.PollsWithMetaData.htm" />
+    <HelpKINode Title="PollsWithMetaData Members" Url="html/AllMembers.T-HoloPollster.PollsWithMetaData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.WinPhone namespace" Url="html/N-HoloPollster.WinPhone.htm" />
+  <HelpKINode Title="HoloPollster.WinPhone.App class">
+    <HelpKINode Title="App Class" Url="html/T-HoloPollster.WinPhone.App.htm" />
+    <HelpKINode Title="App Members" Url="html/AllMembers.T-HoloPollster.WinPhone.App.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.WinPhone.HomeScreen class">
+    <HelpKINode Title="HomeScreen Class" Url="html/T-HoloPollster.WinPhone.HomeScreen.htm" />
+    <HelpKINode Title="HomeScreen Members" Url="html/AllMembers.T-HoloPollster.WinPhone.HomeScreen.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.WinPhone.MainPage class">
+    <HelpKINode Title="MainPage Class" Url="html/T-HoloPollster.WinPhone.MainPage.htm" />
+    <HelpKINode Title="MainPage Members" Url="html/AllMembers.T-HoloPollster.WinPhone.MainPage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.WinPhone.MakeAPoll class">
+    <HelpKINode Title="MakeAPoll Class" Url="html/T-HoloPollster.WinPhone.MakeAPoll.htm" />
+    <HelpKINode Title="MakeAPoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.MakeAPoll.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.WinPhone.NamePoll class">
+    <HelpKINode Title="NamePoll Class" Url="html/T-HoloPollster.WinPhone.NamePoll.htm" />
+    <HelpKINode Title="NamePoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.NamePoll.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.WinPhone.PickAPoll class">
+    <HelpKINode Title="PickAPoll Class" Url="html/T-HoloPollster.WinPhone.PickAPoll.htm" />
+    <HelpKINode Title="PickAPoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.PickAPoll.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.WinPhone.Stats class">
+    <HelpKINode Title="Stats Class" Url="html/T-HoloPollster.WinPhone.Stats.htm" />
+    <HelpKINode Title="Stats Members" Url="html/AllMembers.T-HoloPollster.WinPhone.Stats.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HoloPollster.WinPhone.TakeAPoll class">
+    <HelpKINode Title="TakeAPoll Class" Url="html/T-HoloPollster.WinPhone.TakeAPoll.htm" />
+    <HelpKINode Title="TakeAPoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.TakeAPoll.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HomeScreen class">
+    <HelpKINode Title="HomeScreen Class" Url="html/T-HoloPollster.WinPhone.HomeScreen.htm" />
+    <HelpKINode Title="HomeScreen Members" Url="html/AllMembers.T-HoloPollster.WinPhone.HomeScreen.htm" />
+    <HelpKINode Title="about HomeScreen class" Url="html/T-HoloPollster.WinPhone.HomeScreen.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.WinPhone.HomeScreen.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.WinPhone.HomeScreen.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-HoloPollster.WinPhone.HomeScreen.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-HoloPollster.WinPhone.HomeScreen.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.WinPhone.HomeScreen.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.WinPhone.HomeScreen.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HomeScreen.block_SelectionChanged method" Url="html/M-HoloPollster.WinPhone.HomeScreen.block_SelectionChanged.htm" />
+  <HelpKINode Title="HomeScreen.cloud field" Url="html/F-HoloPollster.WinPhone.HomeScreen.cloud.htm" />
+  <HelpKINode Title="HomeScreen.HomeScreen constructor" Url="html/M-HoloPollster.WinPhone.HomeScreen.-ctor.htm" />
+  <HelpKINode Title="HomeScreen.MakeAPoll_Click method" Url="html/M-HoloPollster.WinPhone.HomeScreen.MakeAPoll_Click.htm" />
+  <HelpKINode Title="HomeScreen.MyStats_Click method" Url="html/M-HoloPollster.WinPhone.HomeScreen.MyStats_Click.htm" />
+  <HelpKINode Title="HomeScreen.MyStats_Click_1 method" Url="html/M-HoloPollster.WinPhone.HomeScreen.MyStats_Click_1.htm" />
+  <HelpKINode Title="HomeScreen.OnNavigatedTo method">
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.HomeScreen.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.HomeScreen.OnNavigatedTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HomeScreen.TakeAPoll_Click method" Url="html/M-HoloPollster.WinPhone.HomeScreen.TakeAPoll_Click.htm" />
+  <HelpKINode Title="HomeScreen.ViewModel property" Url="html/P-HoloPollster.WinPhone.HomeScreen.ViewModel.htm" />
+  <HelpKINode Title="ListBlobsAsync method" Url="html/M-HoloPollster.Cloud.ListBlobsAsync.htm" />
+  <HelpKINode Title="Login property" Url="html/P-HoloPollster.LoginDataViewModel.Login.htm" />
+  <HelpKINode Title="LoginData class">
+    <HelpKINode Title="LoginData Class" Url="html/T-HoloPollster.LoginData.htm" />
+    <HelpKINode Title="LoginData Members" Url="html/AllMembers.T-HoloPollster.LoginData.htm" />
+    <HelpKINode Title="about LoginData class" Url="html/T-HoloPollster.LoginData.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.LoginData.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.LoginData.-ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.LoginData.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.LoginData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LoginData.LoginData constructor" Url="html/M-HoloPollster.LoginData.-ctor.htm" />
+  <HelpKINode Title="LoginData.password property" Url="html/P-HoloPollster.LoginData.password.htm" />
+  <HelpKINode Title="LoginData.pollsCreated property" Url="html/P-HoloPollster.LoginData.pollsCreated.htm" />
+  <HelpKINode Title="LoginData.pollsTaken property" Url="html/P-HoloPollster.LoginData.pollsTaken.htm" />
+  <HelpKINode Title="LoginData.username property" Url="html/P-HoloPollster.LoginData.username.htm" />
+  <HelpKINode Title="LoginDataViewModel class">
+    <HelpKINode Title="LoginDataViewModel Class" Url="html/T-HoloPollster.LoginDataViewModel.htm" />
+    <HelpKINode Title="LoginDataViewModel Members" Url="html/AllMembers.T-HoloPollster.LoginDataViewModel.htm" />
+    <HelpKINode Title="about LoginDataViewModel class" Url="html/T-HoloPollster.LoginDataViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.LoginDataViewModel.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-HoloPollster.LoginDataViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.LoginDataViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.LoginDataViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LoginDataViewModel.defaultLogin field" Url="html/F-HoloPollster.LoginDataViewModel.defaultLogin.htm" />
+  <HelpKINode Title="LoginDataViewModel.Login property" Url="html/P-HoloPollster.LoginDataViewModel.Login.htm" />
+  <HelpKINode Title="MainPage class">
+    <HelpKINode Title="MainPage Class" Url="html/T-HoloPollster.WinPhone.MainPage.htm" />
+    <HelpKINode Title="MainPage Members" Url="html/AllMembers.T-HoloPollster.WinPhone.MainPage.htm" />
+    <HelpKINode Title="about MainPage class" Url="html/T-HoloPollster.WinPhone.MainPage.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.WinPhone.MainPage.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.WinPhone.MainPage.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-HoloPollster.WinPhone.MainPage.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-HoloPollster.WinPhone.MainPage.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.WinPhone.MainPage.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.WinPhone.MainPage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainPage.Button_Click method" Url="html/M-HoloPollster.WinPhone.MainPage.Button_Click.htm" />
+  <HelpKINode Title="MainPage.Button_Click_1 method" Url="html/M-HoloPollster.WinPhone.MainPage.Button_Click_1.htm" />
+  <HelpKINode Title="MainPage.ClosePopUp_Click method" Url="html/M-HoloPollster.WinPhone.MainPage.ClosePopUp_Click.htm" />
+  <HelpKINode Title="MainPage.cloud field" Url="html/F-HoloPollster.WinPhone.MainPage.cloud.htm" />
+  <HelpKINode Title="MainPage.Createpassword2_PasswordChanged method" Url="html/M-HoloPollster.WinPhone.MainPage.Createpassword2_PasswordChanged.htm" />
+  <HelpKINode Title="MainPage.Createpassword_PasswordChanged method" Url="html/M-HoloPollster.WinPhone.MainPage.Createpassword_PasswordChanged.htm" />
+  <HelpKINode Title="MainPage.Createusername_TextChanged method" Url="html/M-HoloPollster.WinPhone.MainPage.Createusername_TextChanged.htm" />
+  <HelpKINode Title="MainPage.MainPage constructor" Url="html/M-HoloPollster.WinPhone.MainPage.-ctor.htm" />
+  <HelpKINode Title="MainPage.newUser_Tapped method" Url="html/M-HoloPollster.WinPhone.MainPage.newUser_Tapped.htm" />
+  <HelpKINode Title="MainPage.OnNavigatedTo method">
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.MainPage.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.MainPage.OnNavigatedTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainPage.Password field" Url="html/F-HoloPollster.WinPhone.MainPage.Password.htm" />
+  <HelpKINode Title="MainPage.password_PasswordChanged method" Url="html/M-HoloPollster.WinPhone.MainPage.password_PasswordChanged.htm" />
+  <HelpKINode Title="MainPage.polls field" Url="html/F-HoloPollster.WinPhone.MainPage.polls.htm" />
+  <HelpKINode Title="MainPage.userdata field" Url="html/F-HoloPollster.WinPhone.MainPage.userdata.htm" />
+  <HelpKINode Title="MainPage.Username field" Url="html/F-HoloPollster.WinPhone.MainPage.Username.htm" />
+  <HelpKINode Title="MainPage.username_TextChanged method" Url="html/M-HoloPollster.WinPhone.MainPage.username_TextChanged.htm" />
+  <HelpKINode Title="MakeAPoll class">
+    <HelpKINode Title="MakeAPoll Class" Url="html/T-HoloPollster.WinPhone.MakeAPoll.htm" />
+    <HelpKINode Title="MakeAPoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.MakeAPoll.htm" />
+    <HelpKINode Title="about MakeAPoll class" Url="html/T-HoloPollster.WinPhone.MakeAPoll.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.WinPhone.MakeAPoll.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.WinPhone.MakeAPoll.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-HoloPollster.WinPhone.MakeAPoll.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-HoloPollster.WinPhone.MakeAPoll.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.WinPhone.MakeAPoll.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.WinPhone.MakeAPoll.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MakeAPoll.AddQuestion method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.AddQuestion.htm" />
+  <HelpKINode Title="MakeAPoll.Button_Click method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.Button_Click.htm" />
+  <HelpKINode Title="MakeAPoll.FinalizePoll method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.FinalizePoll.htm" />
+  <HelpKINode Title="MakeAPoll.FindVisualChildren(Of T) method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.FindVisualChildren--1.htm" />
+  <HelpKINode Title="MakeAPoll.FindVisualChildren&lt;T&gt; method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.FindVisualChildren--1.htm" />
+  <HelpKINode Title="MakeAPoll.MakeAPoll constructor" Url="html/M-HoloPollster.WinPhone.MakeAPoll.-ctor.htm" />
+  <HelpKINode Title="MakeAPoll.OnNavigatedTo method">
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.MakeAPoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.MakeAPoll.OnNavigatedTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MakeAPoll.questions field" Url="html/F-HoloPollster.WinPhone.MakeAPoll.questions.htm" />
+  <HelpKINode Title="MakeAPoll.RemoveQuestion method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.RemoveQuestion.htm" />
+  <HelpKINode Title="MakeAPoll.rowIndex field" Url="html/F-HoloPollster.WinPhone.MakeAPoll.rowIndex.htm" />
+  <HelpKINode Title="MakeAPoll_Click method" Url="html/M-HoloPollster.WinPhone.HomeScreen.MakeAPoll_Click.htm" />
+  <HelpKINode Title="MyStats_Click method" Url="html/M-HoloPollster.WinPhone.HomeScreen.MyStats_Click.htm" />
+  <HelpKINode Title="MyStats_Click_1 method" Url="html/M-HoloPollster.WinPhone.HomeScreen.MyStats_Click_1.htm" />
+  <HelpKINode Title="NamePoll class">
+    <HelpKINode Title="NamePoll Class" Url="html/T-HoloPollster.WinPhone.NamePoll.htm" />
+    <HelpKINode Title="NamePoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.NamePoll.htm" />
+    <HelpKINode Title="about NamePoll class" Url="html/T-HoloPollster.WinPhone.NamePoll.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.WinPhone.NamePoll.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.WinPhone.NamePoll.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-HoloPollster.WinPhone.NamePoll.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-HoloPollster.WinPhone.NamePoll.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.WinPhone.NamePoll.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.WinPhone.NamePoll.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NamePoll.button_Click method" Url="html/M-HoloPollster.WinPhone.NamePoll.button_Click.htm" />
+  <HelpKINode Title="NamePoll.Cancel_Click method" Url="html/M-HoloPollster.WinPhone.NamePoll.Cancel_Click.htm" />
+  <HelpKINode Title="NamePoll.cloud field" Url="html/F-HoloPollster.WinPhone.NamePoll.cloud.htm" />
+  <HelpKINode Title="NamePoll.NamePoll constructor" Url="html/M-HoloPollster.WinPhone.NamePoll.-ctor.htm" />
+  <HelpKINode Title="NamePoll.newPoll field" Url="html/F-HoloPollster.WinPhone.NamePoll.newPoll.htm" />
+  <HelpKINode Title="NamePoll.OnNavigatedTo method">
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.NamePoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.NamePoll.OnNavigatedTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="navigation method" Url="html/M-HoloPollster.WinPhone.PickAPoll.navigation.htm" />
+  <HelpKINode Title="newPoll field" Url="html/F-HoloPollster.WinPhone.NamePoll.newPoll.htm" />
+  <HelpKINode Title="newUser_Tapped method" Url="html/M-HoloPollster.WinPhone.MainPage.newUser_Tapped.htm" />
+  <HelpKINode Title="objSerializer field" Url="html/F-HoloPollster.Cloud.objSerializer.htm" />
+  <HelpKINode Title="OnLaunched method">
+    <HelpKINode Title="OnLaunched Method " Url="html/M-HoloPollster.WinPhone.App.OnLaunched.htm" />
+    <HelpKINode Title="OnLaunched Method " Url="html/Overload-HoloPollster.WinPhone.App.OnLaunched.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnNavigatedTo method">
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.PickAPoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.TakeAPoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.NamePoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.HomeScreen.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.MainPage.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.MakeAPoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.MainPage.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.HomeScreen.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.PickAPoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.Stats.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.NamePoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.MakeAPoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.Stats.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.TakeAPoll.OnNavigatedTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnSuspending method" Url="html/M-HoloPollster.WinPhone.App.OnSuspending.htm" />
+  <HelpKINode Title="Password field" Url="html/F-HoloPollster.WinPhone.MainPage.Password.htm" />
+  <HelpKINode Title="password property" Url="html/P-HoloPollster.LoginData.password.htm" />
+  <HelpKINode Title="password_PasswordChanged method" Url="html/M-HoloPollster.WinPhone.MainPage.password_PasswordChanged.htm" />
+  <HelpKINode Title="PickAPoll class">
+    <HelpKINode Title="PickAPoll Class" Url="html/T-HoloPollster.WinPhone.PickAPoll.htm" />
+    <HelpKINode Title="PickAPoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.PickAPoll.htm" />
+    <HelpKINode Title="about PickAPoll class" Url="html/T-HoloPollster.WinPhone.PickAPoll.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.WinPhone.PickAPoll.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.WinPhone.PickAPoll.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-HoloPollster.WinPhone.PickAPoll.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-HoloPollster.WinPhone.PickAPoll.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.WinPhone.PickAPoll.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.WinPhone.PickAPoll.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PickAPoll.Cancel_Click method" Url="html/M-HoloPollster.WinPhone.PickAPoll.Cancel_Click.htm" />
+  <HelpKINode Title="PickAPoll.navigation method" Url="html/M-HoloPollster.WinPhone.PickAPoll.navigation.htm" />
+  <HelpKINode Title="PickAPoll.OnNavigatedTo method">
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.PickAPoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.PickAPoll.OnNavigatedTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PickAPoll.PickAPoll constructor" Url="html/M-HoloPollster.WinPhone.PickAPoll.-ctor.htm" />
+  <HelpKINode Title="PickAPoll.picked field" Url="html/F-HoloPollster.WinPhone.PickAPoll.picked.htm" />
+  <HelpKINode Title="PickAPoll.rowIndex field" Url="html/F-HoloPollster.WinPhone.PickAPoll.rowIndex.htm" />
+  <HelpKINode Title="picked field" Url="html/F-HoloPollster.WinPhone.PickAPoll.picked.htm" />
+  <HelpKINode Title="pickedPoll field" Url="html/F-HoloPollster.WinPhone.TakeAPoll.pickedPoll.htm" />
+  <HelpKINode Title="PollCreator property" Url="html/P-HoloPollster.PollsWithMetaData.PollCreator.htm" />
+  <HelpKINode Title="PollData class">
+    <HelpKINode Title="PollData Class" Url="html/T-HoloPollster.PollData.htm" />
+    <HelpKINode Title="PollData Members" Url="html/AllMembers.T-HoloPollster.PollData.htm" />
+    <HelpKINode Title="about PollData class" Url="html/T-HoloPollster.PollData.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.PollData.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.PollData.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-HoloPollster.PollData.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.PollData.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.PollData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PollData.AnswerType enumeration" Url="html/T-HoloPollster.PollData.AnswerType.htm" />
+  <HelpKINode Title="PollData.PollData constructor" Url="html/M-HoloPollster.PollData.-ctor.htm" />
+  <HelpKINode Title="PollData.QuestionText property" Url="html/P-HoloPollster.PollData.QuestionText.htm" />
+  <HelpKINode Title="PollData.type field" Url="html/F-HoloPollster.PollData.type.htm" />
+  <HelpKINode Title="PollName property" Url="html/P-HoloPollster.PollsWithMetaData.PollName.htm" />
+  <HelpKINode Title="polls field" Url="html/F-HoloPollster.WinPhone.MainPage.polls.htm" />
+  <HelpKINode Title="pollsCreated property" Url="html/P-HoloPollster.LoginData.pollsCreated.htm" />
+  <HelpKINode Title="pollsTaken property" Url="html/P-HoloPollster.LoginData.pollsTaken.htm" />
+  <HelpKINode Title="PollsWithMetaData class">
+    <HelpKINode Title="PollsWithMetaData Class" Url="html/T-HoloPollster.PollsWithMetaData.htm" />
+    <HelpKINode Title="PollsWithMetaData Members" Url="html/AllMembers.T-HoloPollster.PollsWithMetaData.htm" />
+    <HelpKINode Title="about PollsWithMetaData class" Url="html/T-HoloPollster.PollsWithMetaData.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.PollsWithMetaData.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.PollsWithMetaData.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.PollsWithMetaData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PollsWithMetadata method" Url="html/M-HoloPollster.PollsWithMetaData.PollsWithMetadata.htm" />
+  <HelpKINode Title="PollsWithMetaData.Add method" Url="html/M-HoloPollster.PollsWithMetaData.Add.htm" />
+  <HelpKINode Title="PollsWithMetaData.CreationTime property" Url="html/P-HoloPollster.PollsWithMetaData.CreationTime.htm" />
+  <HelpKINode Title="PollsWithMetaData.GetEnumerator method">
+    <HelpKINode Title="GetEnumerator Method " Url="html/M-HoloPollster.PollsWithMetaData.GetEnumerator.htm" />
+    <HelpKINode Title="GetEnumerator Method " Url="html/M-HoloPollster.PollsWithMetaData.System-Collections-IEnumerable-GetEnumerator.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PollsWithMetaData.PollCreator property" Url="html/P-HoloPollster.PollsWithMetaData.PollCreator.htm" />
+  <HelpKINode Title="PollsWithMetaData.PollName property" Url="html/P-HoloPollster.PollsWithMetaData.PollName.htm" />
+  <HelpKINode Title="PollsWithMetaData.PollsWithMetadata method" Url="html/M-HoloPollster.PollsWithMetaData.PollsWithMetadata.htm" />
+  <HelpKINode Title="PollsWithMetaData.questions property" Url="html/P-HoloPollster.PollsWithMetaData.questions.htm" />
+  <HelpKINode Title="questions field" Url="html/F-HoloPollster.WinPhone.MakeAPoll.questions.htm" />
+  <HelpKINode Title="questions property" Url="html/P-HoloPollster.PollsWithMetaData.questions.htm" />
+  <HelpKINode Title="QuestionText property" Url="html/P-HoloPollster.PollData.QuestionText.htm" />
+  <HelpKINode Title="RadioButton enumeration member" Url="html/T-HoloPollster.PollData.AnswerType.htm" />
+  <HelpKINode Title="RadioButton field" Url="html/F-HoloPollster.PollData.AnswerType.RadioButton.htm" />
+  <HelpKINode Title="RemoveQuestion method" Url="html/M-HoloPollster.WinPhone.MakeAPoll.RemoveQuestion.htm" />
+  <HelpKINode Title="RetrievePollFromCloud method" Url="html/M-HoloPollster.Cloud.RetrievePollFromCloud.htm" />
+  <HelpKINode Title="RootFrame_FirstNavigated method" Url="html/M-HoloPollster.WinPhone.App.RootFrame_FirstNavigated.htm" />
+  <HelpKINode Title="rowIndex field">
+    <HelpKINode Title="rowIndex Field" Url="html/F-HoloPollster.WinPhone.PickAPoll.rowIndex.htm" />
+    <HelpKINode Title="rowIndex Field" Url="html/F-HoloPollster.WinPhone.TakeAPoll.rowIndex.htm" />
+    <HelpKINode Title="rowIndex Field" Url="html/F-HoloPollster.WinPhone.MakeAPoll.rowIndex.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Stats class">
+    <HelpKINode Title="Stats Class" Url="html/T-HoloPollster.WinPhone.Stats.htm" />
+    <HelpKINode Title="Stats Members" Url="html/AllMembers.T-HoloPollster.WinPhone.Stats.htm" />
+    <HelpKINode Title="about Stats class" Url="html/T-HoloPollster.WinPhone.Stats.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.WinPhone.Stats.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.WinPhone.Stats.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-HoloPollster.WinPhone.Stats.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.WinPhone.Stats.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.WinPhone.Stats.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Stats.Back_Click method" Url="html/M-HoloPollster.WinPhone.Stats.Back_Click.htm" />
+  <HelpKINode Title="Stats.OnNavigatedTo method">
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.Stats.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.Stats.OnNavigatedTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Stats.Stats constructor" Url="html/M-HoloPollster.WinPhone.Stats.-ctor.htm" />
+  <HelpKINode Title="submitPoll method" Url="html/M-HoloPollster.WinPhone.TakeAPoll.submitPoll.htm" />
+  <HelpKINode Title="TakeAPoll class">
+    <HelpKINode Title="TakeAPoll Class" Url="html/T-HoloPollster.WinPhone.TakeAPoll.htm" />
+    <HelpKINode Title="TakeAPoll Members" Url="html/AllMembers.T-HoloPollster.WinPhone.TakeAPoll.htm" />
+    <HelpKINode Title="about TakeAPoll class" Url="html/T-HoloPollster.WinPhone.TakeAPoll.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-HoloPollster.WinPhone.TakeAPoll.htm" />
+    <HelpKINode Title="constructor" Url="html/M-HoloPollster.WinPhone.TakeAPoll.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-HoloPollster.WinPhone.TakeAPoll.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-HoloPollster.WinPhone.TakeAPoll.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-HoloPollster.WinPhone.TakeAPoll.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-HoloPollster.WinPhone.TakeAPoll.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TakeAPoll.GoBack method" Url="html/M-HoloPollster.WinPhone.TakeAPoll.GoBack.htm" />
+  <HelpKINode Title="TakeAPoll.OnNavigatedTo method">
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/Overload-HoloPollster.WinPhone.TakeAPoll.OnNavigatedTo.htm" />
+    <HelpKINode Title="OnNavigatedTo Method " Url="html/M-HoloPollster.WinPhone.TakeAPoll.OnNavigatedTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TakeAPoll.pickedPoll field" Url="html/F-HoloPollster.WinPhone.TakeAPoll.pickedPoll.htm" />
+  <HelpKINode Title="TakeAPoll.rowIndex field" Url="html/F-HoloPollster.WinPhone.TakeAPoll.rowIndex.htm" />
+  <HelpKINode Title="TakeAPoll.submitPoll method" Url="html/M-HoloPollster.WinPhone.TakeAPoll.submitPoll.htm" />
+  <HelpKINode Title="TakeAPoll.TakeAPoll constructor" Url="html/M-HoloPollster.WinPhone.TakeAPoll.-ctor.htm" />
+  <HelpKINode Title="TakeAPoll_Click method" Url="html/M-HoloPollster.WinPhone.HomeScreen.TakeAPoll_Click.htm" />
+  <HelpKINode Title="TextBox enumeration member" Url="html/T-HoloPollster.PollData.AnswerType.htm" />
+  <HelpKINode Title="TextBox field" Url="html/F-HoloPollster.PollData.AnswerType.TextBox.htm" />
+  <HelpKINode Title="transitions field" Url="html/F-HoloPollster.WinPhone.App.transitions.htm" />
+  <HelpKINode Title="type field" Url="html/F-HoloPollster.PollData.type.htm" />
+  <HelpKINode Title="UploadPollToCloudSerialized method" Url="html/M-HoloPollster.Cloud.UploadPollToCloudSerialized.htm" />
+  <HelpKINode Title="userdata field" Url="html/F-HoloPollster.WinPhone.MainPage.userdata.htm" />
+  <HelpKINode Title="Username field" Url="html/F-HoloPollster.WinPhone.MainPage.Username.htm" />
+  <HelpKINode Title="username property" Url="html/P-HoloPollster.LoginData.username.htm" />
+  <HelpKINode Title="UsernameListBlobsAsync method" Url="html/M-HoloPollster.Cloud.UsernameListBlobsAsync.htm" />
+  <HelpKINode Title="UsernameRetrieveFromCloud method" Url="html/M-HoloPollster.Cloud.UsernameRetrieveFromCloud.htm" />
+  <HelpKINode Title="UsernameUploadToCloudSerialized method" Url="html/M-HoloPollster.Cloud.UsernameUploadToCloudSerialized.htm" />
+  <HelpKINode Title="username_TextChanged method" Url="html/M-HoloPollster.WinPhone.MainPage.username_TextChanged.htm" />
+  <HelpKINode Title="ViewModel property" Url="html/P-HoloPollster.WinPhone.HomeScreen.ViewModel.htm" />
+</HelpKI>
